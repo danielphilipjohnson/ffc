@@ -9,13 +9,13 @@ ProfileIcons.prototype.addSocialLinks = function (socialMediaLinks) {
         var linkedin = $('<a href="https://www.linkedin.com/in/daniel-philip-johnson/"><i class="fab fa-linkedin fa-2x"></i></a>')
         var github = $('<a href="https://github.com/danielphilipjohnson/"><i class="fab fa-github fa-2x"></i></a>')
 
-        $('#icons').append(twitter)
-        $('#icons').append(facebook)
-        $('#icons').append(linkedin)
-        $('#icons').append(github)
-
+        $('#social-icons').append(twitter)
+        $('#social-icons').append(facebook)
+        $('#social-icons').append(linkedin)
+        $('#social-icons').append(github)
 
     }
+
     if (socialMediaLinks.length < 1) {
 
         defaultLinks();
@@ -36,21 +36,21 @@ ProfileIcons.prototype.addSocialLinks = function (socialMediaLinks) {
 
                 case "twitter":
                     var twitter = $('<a href=' + element.link + '><i class="fab fa-twitter fa-2x"></i></a>');
-                    $('#icons').append(twitter);
+                    $('#social-icons').append(twitter);
                     break;
                 case "facebook":
                     var facebook = $('<a href=' + element.link + '><i class="fab fa-facebook fa-2x"></i></a>')
-                    $('#icons').append(facebook);
+                    $('#social-icons').append(facebook);
                     break;
 
                 case "linkedin":
                     var linkedin = $('<a href=' + element.link + '><i class="fab fa-linkedin fa-2x"></i></a>')
-                    $('#icons').append(linkedin);
+                    $('#social-icons').append(linkedin);
                     break;
 
                 case "github":
                     var github = $('<a href=' + element.link + '><i class="fab fa-github fa-2x"></i></a>')
-                    $('#icons').append(github);
+                    $('#social-icons').append(github);
                     break;
 
                 default:

@@ -7,8 +7,8 @@
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist",
-    "concat:js": "concat-cli -f dist/src/*.js -o dist/js/bundle.js",
-    "watch:js": "onchange 'dist/src/*.js' -- npm run concat:js",
+    "concat:js": "concat-cli -f src/*.js -o js/bundle.js",
+    "watch:js": "onchange 'src/*.js' -- npm run concat:js",
     "build-css": "node-sass --include-path scss scss/main.scss   dist/css/main.css"
   },
   "author": "Daniel Philip Johnson",

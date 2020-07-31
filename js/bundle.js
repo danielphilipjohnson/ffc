@@ -104,13 +104,13 @@ ProfileIcons.prototype.addSocialLinks = function (socialMediaLinks) {
         var linkedin = $('<a href="https://www.linkedin.com/in/daniel-philip-johnson/"><i class="fab fa-linkedin fa-2x"></i></a>')
         var github = $('<a href="https://github.com/danielphilipjohnson/"><i class="fab fa-github fa-2x"></i></a>')
 
-        $('#icons').append(twitter)
-        $('#icons').append(facebook)
-        $('#icons').append(linkedin)
-        $('#icons').append(github)
-
+        $('#social-icons').append(twitter)
+        $('#social-icons').append(facebook)
+        $('#social-icons').append(linkedin)
+        $('#social-icons').append(github)
 
     }
+
     if (socialMediaLinks.length < 1) {
 
         defaultLinks();
@@ -131,21 +131,21 @@ ProfileIcons.prototype.addSocialLinks = function (socialMediaLinks) {
 
                 case "twitter":
                     var twitter = $('<a href=' + element.link + '><i class="fab fa-twitter fa-2x"></i></a>');
-                    $('#icons').append(twitter);
+                    $('#social-icons').append(twitter);
                     break;
                 case "facebook":
                     var facebook = $('<a href=' + element.link + '><i class="fab fa-facebook fa-2x"></i></a>')
-                    $('#icons').append(facebook);
+                    $('#social-icons').append(facebook);
                     break;
 
                 case "linkedin":
                     var linkedin = $('<a href=' + element.link + '><i class="fab fa-linkedin fa-2x"></i></a>')
-                    $('#icons').append(linkedin);
+                    $('#social-icons').append(linkedin);
                     break;
 
                 case "github":
                     var github = $('<a href=' + element.link + '><i class="fab fa-github fa-2x"></i></a>')
-                    $('#icons').append(github);
+                    $('#social-icons').append(github);
                     break;
 
                 default:
@@ -163,11 +163,9 @@ function Statement(){
 Statement.prototype.addStatement =  function (statement) {
     if (statement === "") {
         statement = "Web Developer, Programmer, Designer & Entrepreneur";
-        var h2 = $('<h2 class="sm-heading">' + statement + '</h2>')
+        var h2 = $('<h2 class="lg-heading">' + statement + '</h2>')
         $('#icons').prepend(h2);
         throw new Error("Statement can't be empty: Please enter a statement");
-
-
 
     }
     else{
@@ -208,7 +206,7 @@ function ProfileName() {}
 ProfileName.prototype.parseName = function (name) {
   if (name === "") {
     var span = $('<span class="text-secondary">Doe</span>');
-    var h1 = $('<h1 class="lg-heading"> John </h1>');
+    var h1 = $('<h1 class="sm-heading"> John </h1>');
 
     $("#home").prepend(h1);
     $(h1).append(span);

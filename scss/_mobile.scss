@@ -24,7 +24,7 @@
     }
   }
 
-  ul.menu-nav,
+  .menu-nav,
   div.menu-branding {
     float: none;
     width: 100%;
@@ -46,7 +46,7 @@
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url("../img/profile-sm.png");
+      background: url("../../img/profile-sm.png");
       width: 150px;
       height: 150px;
     }
@@ -78,7 +78,7 @@
 
     .lg-heading {
       margin-top: 1rem;
-      font-size: 5rem;
+      font-size: 3.5rem;
     }
   }
 

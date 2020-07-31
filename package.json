@@ -10,7 +10,6 @@
     "concat:js": "concat-cli -f dist/src/*.js -o dist/js/bundle.js",
     "watch:js": "onchange 'dist/src/*.js' -- npm run concat:js",
     "build-css": "node-sass --include-path scss scss/main.scss   dist/css/main.css"
-    
   },
   "author": "Daniel Philip Johnson",
   "license": "MIT",

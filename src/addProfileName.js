@@ -3,7 +3,7 @@ function ProfileName() {}
 ProfileName.prototype.parseName = function (name) {
   if (name === "") {
     var span = $('<span class="text-secondary">Doe</span>');
-    var h1 = $('<h1 class="lg-heading"> John </h1>');
+    var h1 = $('<h1 class="sm-heading"> John </h1>');
 
     $("#home").prepend(h1);
     $(h1).append(span);
@@ -17,7 +17,7 @@ ProfileName.prototype.parseName = function (name) {
 };
 
 ProfileName.prototype.addToDOM = function (fullname) {
-  var h1 = $('<h1 class="lg-heading">' + fullname[0] + " </h1>");
+  var h1 = $('<h1 class="sm-heading">' + fullname[0] + " </h1>");
 
   $("#home").prepend(h1);
 

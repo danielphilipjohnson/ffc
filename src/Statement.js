@@ -10,8 +10,6 @@ Statement.prototype.addStatement =  function (statement) {
         $('#icons').prepend(h2);
         throw new Error("Statement can't be empty: Please enter a statement");
 
-
-
     }
     else{
         var h2 = $('<h2 class="sm-heading">' + statement + '</h2>')

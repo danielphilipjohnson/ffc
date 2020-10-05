@@ -438,8 +438,8 @@ contact.addFrom("Liverpool");
 
 function footer() {
     var year = new Date().getFullYear();
-    var txt = $("#main-footer").text();
-    $("#main-footer").text(txt + year);
+    var txt = $("#year").text();
+    $("#year").text(txt + year);
 }
 
 footer();

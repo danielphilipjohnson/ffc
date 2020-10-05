@@ -1,8 +1,110 @@
+@import "../mixins";
 
-#main-footer {
+.main-footer {
+
   text-align: center;
   padding: 1rem;
   background: darken($primary-color, 10);
-  color: set-texaboutt-color($primary-color);
-  height: 60px;
+  color: set-text-color($primary-color);
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    border-bottom: 1px solid #8b8a8a;
+    padding: 1rem 0;
+
+    .sitemap {
+      display: flex;
+      > * {
+        padding: 1rem;
+        a {
+          color: #fff;
+          font-weight: 800;
+          border-bottom: 3px transparent solid;
+          padding-bottom: 0.5rem;
+          transition: border-color 0.5s;
+          &:hover {
+            border-color: #3ba6b7;
+            opacity: 0.8;
+            
+          }
+        }
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      color: #fff;
+
+      .nav-item {
+        padding: 7px;
+        background-color: rgba(255, 255, 255, 0.15);
+        margin: 0.5rem;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        font-size: 1.25rem;
+        line-height: 1.75;
+        transition: all 1.25s;
+
+        &.twitter:hover {
+          background-color: #1DA1F2;
+          opacity: 0.8;
+          transform: scale(1.5);
+        }
+        &.facebook:hover {
+          background-color: #4267B2;
+          opacity: 0.8;
+          transform: scale(1.5);
+        }
+        &.github:hover {
+          background-color: #000;
+          opacity: 0.8;
+          transform: scale(1.5);
+        }
+        &.linkedin:hover {
+          background-color: #2867b2;
+          opacity: 0.8;
+          transform: scale(1.5);
+        }
+
+        a {
+          color: #fff;
+         
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding: 1.5rem 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    .author{
+      color: #fff;
+      transition: all 0.5s;
+      &:hover {
+        opacity: 0.8;
+        color: #94c85a;
+        transform: scale(2);
+      }
+    }
+  }
+}
+
+// Smartphones, Tablets & Small Laptops
+@include mediaMd {
+  .main-footer {
+    .footer-top {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 }

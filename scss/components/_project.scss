@@ -1,0 +1,53 @@
+
+
+
+// Work/Projects
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+
+
+// Widescreens
+@include mediaXl {
+.projects {
+  /* changed slightly */
+  grid-template-columns: repeat(4, 1fr);
+}
+}
+
+// Desktops & Laptops
+@include mediaLg {
+.projects {
+  grid-template-columns: repeat(3, 1fr);
+}
+}
+
+// Tablets & Small Laptops
+@include mediaMd {
+
+.projects {
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+
+// Smartphones
+@include mediaSm {
+
+.projects {
+  grid-template-columns: 1fr;
+}
+}

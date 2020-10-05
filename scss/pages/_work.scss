@@ -1,0 +1,9 @@
+@import "../mixins";
+
+// Tablets & Small Laptops
+@include mediaMd {
+
+  main#work {
+    padding-top: 4rem;
+  }
+}

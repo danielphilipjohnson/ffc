@@ -1,3 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #303146;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+  body#bg-img {
+    background: url(../img/bg.png);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(48, 49, 70, 0.9); }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 5rem; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(52, 53, 76, 0.5); }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+aside {
+  position: fixed;
+  z-index: 9999;
+  width: 100%; }
+
+.text-secondary {
+  color: #94c85a; }
+
+.social-icons a {
+  font-size: 1.5rem; }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -73,7 +130,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../../img/profile-sm.png");
+      background: url("../../img/profile-md.jpg");
       border-radius: 50%;
       border: solid 3px #94c85a; }
   .menu .nav-item {
@@ -107,6 +164,32 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+@media screen and (max-width: 768px) {
+  .menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    .menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 72vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 28vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../../img/profile-sm.jpg");
+      width: 150px;
+      height: 150px;
+      margin: 1rem 0; } }
+
+@media screen and (max-width: 500px) {
+  .menu-nav .icons a i {
+    font-size: 2rem; } }
+
 .area {
   position: absolute;
   height: 100vh;
@@ -114,7 +197,7 @@
 
 .circles {
   position: absolute;
-  top: 0;
+  top: 12px;
   left: 0;
   width: 100%;
   height: 98%;
@@ -205,70 +288,6 @@
     opacity: 0;
     border-radius: 50%; } }
 
-.projects {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
-  .projects img {
-    width: 100%;
-    border: 3px #fff solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #94c85a;
-      transition: all 0.5s ease-out; }
-
-* {
-  box-sizing: border-box; }
-
-body {
-  background: #303146;
-  color: #fff;
-  height: 100%;
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
-  body#bg-img {
-    background: url(../img/bg.png);
-    background-attachment: fixed;
-    background-size: cover; }
-    body#bg-img:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: rgba(48, 49, 70, 0.9); }
-
-h1,
-h2,
-h3 {
-  margin: 0;
-  font-weight: 400; }
-  h1.lg-heading,
-  h2.lg-heading,
-  h3.lg-heading {
-    font-size: 5rem; }
-  h1.sm-heading,
-  h2.sm-heading,
-  h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(52, 53, 76, 0.5); }
-
-a {
-  color: #fff;
-  text-decoration: none; }
-
-header {
-  position: fixed;
-  z-index: 9999;
-  width: 100%; }
-
-.text-secondary {
-  color: #94c85a; }
-
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
@@ -287,8 +306,29 @@ main {
     main#home h1 {
       margin-top: 15vh; }
 
-.social-icons a {
-  font-size: 1.5rem; }
+@media screen and (max-width: 768px) {
+  main {
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1.2;
+      margin-bottom: 1rem; } }
+
+@media screen and (max-width: 500px) {
+  main {
+    padding: 1rem; }
+    main#home h1 {
+      margin-top: 8vh;
+      line-height: 1.2; }
+    main .lg-heading {
+      margin-top: 1rem;
+      font-size: 3.5rem; } }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1b1c28;
+  color: set-texaboutt-color(#303146);
+  height: 60px; }
 
 .about-info {
   display: grid;
@@ -314,12 +354,33 @@ main {
     padding: 0.5rem;
     border-bottom: #94c85a 5px solid; }
 
+@media screen and (max-width: 768px) {
+  main#about {
+    padding-top: 4rem; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; }
+    .about-info .bio {
+      font-size: 1.25rem; } }
+
+main#contact {
+  padding-top: 4rem; }
+  main#contact section {
+    position: relative;
+    z-index: 1000; }
+
+@media screen and (max-width: 768px) {
+  main#work {
+    padding-top: 4rem; } }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem; }
+  .boxes #email {
+    word-break: break-word; }
   .boxes div {
     font-size: 2rem;
     border: 3px #fff solid;
@@ -350,60 +411,31 @@ main {
   background: #aeafc7;
   color: #333; }
 
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #1b1c28;
-  color: #fff;
-  height: 60px; }
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #94c85a;
+      transition: all 0.5s ease-out; }
 
-@media screen and (min-width: 1171px) {
+@media screen and (min-width: 2500px) {
   .projects {
+    /* changed slightly */
     grid-template-columns: repeat(4, 1fr); } }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 769px) and (max-width: 2499px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-  .menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    .menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      background: url("../../img/profile-sm.png");
-      width: 150px;
-      height: 150px; }
-  .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
-    grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  main {
-    padding: 2rem; }
-    main #home h1 {
-      margin-top: 10vh; }
-    main .lg-heading {
-      margin-top: 1rem;
-      font-size: 3.5rem; }
   .projects {
     grid-template-columns: 1fr; } }

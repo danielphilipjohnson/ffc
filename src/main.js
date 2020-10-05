@@ -27,23 +27,12 @@ profileIcons.addSocialLinks(socialMediaLinks);
 
 
 var bio = new Bio();
-var txt = `In 2017, I started my journey with web development, enrolling first with Code Academy, then later progressed to 
-udacity for Front-End and Full-stack Developer. I continued to further my knowledge by enrolling in Free Code Camp, 
-which included building an extensiabout Algorithms and APIs and microservices. While taking this course, I grew 
-to enjoy using React JS over other JS frameworks as I built a markdown viewer and a drum machine. After 
-completing the code camp; I started to build a portfolio on Github demonstrating my skills and 
-adaptability. The GitHub repository contains various CSS frameworks (Bootstrap 3.3, Bootstrap 4, 
-  Materialize-CSS, semantic Ui), Preprocessors(Sass, Less), Package Managers(NPM, Yarn), 
-  Module Loaders(parcel.js, webpack) and task runners(Gulp, Grunt). Now I am ready to 
-  pursue a career as a junior developer, to hone my skills in a professional setting. 
-  I am looking for a team that can accelerate my growth and fuel my aspirations to become a 
-  professional developer. Feel free to contact me privately, to discuss my availability. I 
-  am also looking for opportunities to collaborate with others on Responsive web applications. 
-`;
+var txt = `I completed Free Code Camp in February 15, 2019. Making websites started as a hobby in the past. However, after experiencing issues with my job during quaratine with covid
+I started to take coursera courses and decided to pursue a career in web development. So recently I have been updating my old projects to make them more modern and to refresh my skills with Udemy courses.`;
+
 bio.add(txt);
 
 bio.addImage("./img/profile-md.jpg", "Daniel johnson");
-
 
 var jobs = [
     {

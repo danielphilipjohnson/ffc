@@ -1,3 +1,5 @@
+@import "../mixins";
+
 .main-footer {
 
   text-align: center;
@@ -6,8 +8,9 @@
   color: set-text-color($primary-color);
 
   .footer-top {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     align-items: center;
     border-bottom: 1px solid #8b8a8a;
     padding: 1rem 0;
@@ -93,6 +96,15 @@
         color: #94c85a;
         transform: scale(2);
       }
+    }
+  }
+}
+
+// Smartphones, Tablets & Small Laptops
+@include mediaMd {
+  .main-footer {
+    .footer-top {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }

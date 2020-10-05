@@ -355,8 +355,9 @@ main {
   background: #1b1c28;
   color: #fff; }
   .main-footer .footer-top {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     align-items: center;
     border-bottom: 1px solid #8b8a8a;
     padding: 1rem 0; }
@@ -421,6 +422,10 @@ main {
         opacity: 0.8;
         color: #94c85a;
         transform: scale(2); }
+
+@media screen and (max-width: 768px) {
+  .main-footer .footer-top {
+    grid-template-columns: repeat(1, 1fr); } }
 
 .about-info {
   display: grid;

@@ -90,7 +90,7 @@ var projects = [
         bit_bucket: ""
     }, {
         title: "personal portfolio",
-        imageSrc: "./img/responsive-img/portfolio.png",
+        imageSrc: "./img/responsive-img/portfolio.jpg",
         alt: "",
         projectLink: "https://codepen.io/danielphilipjohnson/full/yLegpeK",
         githubLink: "https://github.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/tree/master/1.Responsive-Web-Design-Certification/5.Personal-Portfolio-Webpage",
@@ -146,7 +146,7 @@ var projects = [
         bit_bucket: ""
     }, {
         title: "simon",
-        imageSrc: "./img/front-end-lib/simon.png",
+        imageSrc: "./img/front-end-lib/simon.jpg",
         alt: "",
         projectLink: "https://codepen.io/danielphilipjohnson/full/QWypLgY",
         githubLink: "https://github.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/tree/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Simon",

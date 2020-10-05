@@ -11,9 +11,10 @@
 
 @import "./sitewide/main";
 @import "./pages/about";
+@import "./pages/work";
 
-@import "project";
 
+@import "./components/project";
 
 
 // Contact Page
@@ -70,8 +71,6 @@
   text-align: center;
   padding: 1rem;
   background: darken($primary-color, 10);
-  color: set-text-color($primary-color);
+  color: set-texaboutt-color($primary-color);
   height: 60px;
 }
-
-@import "mobile";

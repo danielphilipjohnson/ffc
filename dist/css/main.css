@@ -44,7 +44,7 @@ a {
   color: #fff;
   text-decoration: none; }
 
-header {
+aside {
   position: fixed;
   z-index: 9999;
   width: 100%; }
@@ -323,6 +323,13 @@ main {
       margin-top: 1rem;
       font-size: 3.5rem; } }
 
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1b1c28;
+  color: set-texaboutt-color(#303146);
+  height: 60px; }
+
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -356,38 +363,15 @@ main {
     .about-info .bio {
       font-size: 1.25rem; } }
 
+main#contact {
+  padding-top: 4rem; }
+  main#contact section {
+    position: relative;
+    z-index: 1000; }
+
 @media screen and (max-width: 768px) {
   main#work {
     padding-top: 4rem; } }
-
-.projects {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
-  .projects img {
-    width: 100%;
-    border: 3px #fff solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #94c85a;
-      transition: all 0.5s ease-out; }
-
-@media screen and (min-width: 2500px) {
-  .projects {
-    /* changed slightly */
-    grid-template-columns: repeat(4, 1fr); } }
-
-@media screen and (min-width: 769px) and (max-width: 2499px) {
-  .projects {
-    grid-template-columns: repeat(3, 1fr); } }
-
-@media screen and (max-width: 768px) {
-  .projects {
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media screen and (max-width: 500px) {
-  .projects {
-    grid-template-columns: 1fr; } }
 
 .boxes {
   display: flex;
@@ -395,6 +379,8 @@ main {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem; }
+  .boxes #email {
+    word-break: break-word; }
   .boxes div {
     font-size: 2rem;
     border: 3px #fff solid;
@@ -425,9 +411,31 @@ main {
   background: #aeafc7;
   color: #333; }
 
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #1b1c28;
-  color: set-texaboutt-color(#303146);
-  height: 60px; }
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #94c85a;
+      transition: all 0.5s ease-out; }
+
+@media screen and (min-width: 2500px) {
+  .projects {
+    /* changed slightly */
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 2499px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media screen and (max-width: 768px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 500px) {
+  .projects {
+    grid-template-columns: 1fr; } }

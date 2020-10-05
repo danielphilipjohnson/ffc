@@ -42,7 +42,7 @@ adaptability. The GitHub repository contains various CSS frameworks (Bootstrap 3
 `;
 bio.add(txt);
 
-bio.addImage("./img/profile-sm.png", "Daniel johnson");
+bio.addImage("./img/profile-md.jpg", "Daniel johnson");
 
 
 var jobs = [

@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous">
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="crossorigin="anonymous"
+      />
 
     <link rel="stylesheet" href="./dist/css/main.css">
     <title>Contact Me</title>
@@ -70,24 +70,8 @@
         </div>
       </nav>
     </aside>
-    <!-- <div class="area">
-    <ul class="circles">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
 
-  </div> -->
     <main id="contact">
-
-      <!-- <div class="overlay">      </div> -->
 
       <header>
         <h1 class="lg-heading">
@@ -95,24 +79,250 @@
           <span class="text-secondary">Me</span>
         </h1>
         <h2 class="sm-heading">
-          This is how you can reach me...
+          Got a question?
         </h2>
       </header>
 
-      <section>
-        <div class="boxes">
-          <div id="email">
+      <section class="form-card container">
+        <div class="image-container">
+          <header>
+            <!-- <h2> I can make your design a reality, maintain your project or
+              offer
+              training</h2> -->
+            <h1 id="title">Look at my work and blogs</h1>
+          </header>
+
+          <div class="boxes">
+            <div class="dev">
+              <i class="fab fa-dev"></i>
+            </div>
+
+            <div class="hackerrank">
+              <i class="fab fa-hackerrank"></i>
+            </div>
+
+            <div class="codepen">
+              <i class="fab fa-codepen"></i>
+            </div>
+
+            <div class="stack-overflow">
+              <i class="fab fa-stack-overflow"></i>
+            </div>
+            <div class="free-code-camp">
+              <i class="fab fa-free-code-camp"></i>
+            </div>
+            <div class="github">
+              <i class="fab fa-github"></i>
+            </div>
+
+
           </div>
-          <div id="phone">
-          </div>
-          <div id="from">
+        </div>
+
+        <div class="form-container">
+          <p class="description">I am here to help and answer any question you
+            might have about your project. I look forward to hearing from you 🙂
+          </p>
+
+          <form id="project-contact" method="GET"
+            action="">
+
+            <div class="row">
+              <div class="col">
+                <div class="labels">
+                  <label id="name-label" for="first-name">First Name
+                    <span class="asterik">*</span>
+                  </label>
+                </div>
+                <input autofocus type="text" name="first-name" id="first-name"
+                  class="input-field" placeholder="Enter your name first name"
+                  required>
+              </div>
+              <div class="col">
+                <div class="labels">
+                  <label id="name-label" for="last-name">Last Name
+                    <span class="asterik">*</span>
+                  </label>
+                </div>
+                <input autofocus type="text" name="last-name" id="last-name"
+                  class="input-field" placeholder="Enter your last name"
+                  required>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="labels">
+                  <label id="email-label" for="email">Email
+                    <span class="asterik">*</span>
+                  </label>
+                </div>
+                <input type="email" name="email" id="email" class="input-field"
+                  required placeholder="Enter your Email">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="labels">
+                  <label for="help">
+                    What can I help you with
+                    <span class="asterik">*</span>
+                  </label>
+                </div>
+
+                <div class="select-box top">
+                  <input type="checkbox" class="options-view-button">
+                  <div class="select-button" class="brd">
+                    <div class="selected-value">
+                      <span>Select a service</span>
+                    </div>
+                    <div class="chevrons">
+                      <i class="fas fa-chevron-up"></i>
+                      <i class="fas fa-chevron-down"></i>
+                    </div>
+                  </div>
+                  <div class="options">
+                    <div class="option">
+                      <input class="s-c top" type="radio" name="service"
+                        value="build">
+                      <input class="s-c bottom" type="radio" name="service"
+                        value="build">
+                      <i class="fas fa-hammer"></i>
+                      <span class="label">Build</span>
+                      <span class="opt-val">Build</span>
+                    </div>
+                    <div class="option">
+                      <input class="s-c top" type="radio" name="service"
+                        value="maintain">
+                      <input class="s-c bottom" type="radio" name="service"
+                        value="maintain">
+                      <i class="fas fa-wrench"></i>
+                      <span class="label">Maintain</span>
+                      <span class="opt-val">Maintain</span>
+                    </div>
+                    <div class="option">
+                      <input class="s-c top" type="radio" name="service"
+                        value="support">
+                      <input class="s-c bottom" type="radio" name="service"
+                        value="support">
+                      <i class="fas fa-tools"></i>
+                      <span class="label">Support</span>
+                      <span class="opt-val">Support</span>
+                    </div>
+                    <div class="option">
+                      <input class="s-c top" type="radio" name="service"
+                        value="training">
+                      <input class="s-c bottom" type="radio" name="service"
+                        value="training">
+                      <i class="fas fa-chalkboard-teacher"></i>
+                      <span class="label">Training</span>
+                      <span class="opt-val">Training</span>
+                    </div>
+                    <div class="option-bg"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="labels">
+                  <label for="help">
+                    Project type
+                    <span class="asterik">*</span>
+                  </label>
+                </div>
+
+                <div class="select-box">
+                  <input type="checkbox" class="options-view-button">
+                  <div class="select-button" class="brd">
+                    <div class="selected-value">
+                      <span>Select a project</span>
+                    </div>
+                    <div class="chevrons">
+                      <i class="fas fa-chevron-up"></i>
+                      <i class="fas fa-chevron-down"></i>
+                    </div>
+                  </div>
+                  <div class="options">
+                    <div class="option">
+                      <input class="s-c top" type="radio" name="project"
+                        value="web">
+                      <input class="s-c bottom" type="radio" name="project"
+                        value="web">
+                      <i class="fab fa-firefox-browser"></i>
+                      <span class="label">Web</span>
+                      <span class="opt-val">Web</span>
+                    </div>
+                    <div class="option">
+                      <input class="s-c top" type="radio" name="project"
+                        value="desktop">
+                      <input class="s-c bottom" type="radio" name="project"
+                        value="desktop">
+                      <i class="fas fa-tools"></i>
+                      <span class="label">Desktop</span>
+                      <span class="opt-val">Desktop</span>
+                    </div>
+                    <div class="option">
+                      <input class="s-c top" type="radio" name="project"
+                        value="mobile">
+                      <input class="s-c bottom" type="radio" name="project"
+                        value="mobile">
+                      <i class="fas fa-mobile"></i>
+                      <span class="label">Mobile</span>
+                      <span class="opt-val">Mobile</span>
+                    </div>
+                    <div class="option-bg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="labels">
+                  <label for="comments">Any Comments or
+                    Suggestions?</label>
+                </div>
+                <textarea id="comments" class="input-field"
+                  name="comment"
+                  placeholder="Enter your comment here..." rows="8"></textarea>
+              </div>
+            </div>
+            <button class="btn-submit" id="submit" type="submit">Send Message</button>
+          </form>
+
+          <div class="contact">
+            <p>Contact Information</p>
+            <div class="info" id="from">
+              <i class="fas fa-map-marker-alt"></i>
+              <address>
+                Truro,
+
+                Cornwall,
+
+                United Kingdom
+              </address>
+
+            </div>
+            <div class="info" id="phone">
+              <i class="fas fa-phone"></i>
+              <span>
+                +44 555-5555
+              </span>
+
+            </div>
+
+            <div class="info" id="email">
+              <i class="fas fa-envelope"></i>
+              <span>daniel-philip-johnson@gmail.com</span>
+
+            </div>
+
           </div>
         </div>
       </section>
-
     </main>
 
-   
     <!-- Footer -->
     <footer class="main-footer">
       <div class="container">
@@ -128,7 +338,7 @@
               <a href="./contact.html">Contact</a>
             </p>
           </div>
-  
+
           <ul class="social-icons">
             <li class="nav-item twitter">
               <a href="https://twitter.com/danielp_johnson" target="_blank">
@@ -137,7 +347,8 @@
             </li>
 
             <li class="nav-item facebook">
-              <a href="https://www.facebook.com/DanielPhilipJohnson" target="_blank">
+              <a href="https://www.facebook.com/DanielPhilipJohnson"
+                target="_blank">
                 <i class="fab fa-facebook"></i>
               </a>
             </li>
@@ -149,22 +360,24 @@
             </li>
 
             <li class="nav-item linkedin">
-              <a href="https://www.linkedin.com/in/daniel-philip-johnson/" target="_blank">
+              <a href="https://www.linkedin.com/in/daniel-philip-johnson/"
+                target="_blank">
                 <i class="fab fa-linkedin"></i>
               </a>
             </li>
           </ul>
         </div>
-        
+
         <div class="footer-bottom">
-          <p>Copyright &copy; <span>2020.</span> All Rights Reserved | Designed and built with </p>
-            <div class="heart-container">
-              <div class="heart"></div>
-            </div>
-            <p>
-              by 
-              <a class="author" href="">Daniel Philip Johnson </a>
-            </p>
+          <p>Copyright &copy; <span>2020.</span> All Rights Reserved | Designed
+            and built with </p>
+          <div class="heart-container">
+            <div class="heart"></div>
+          </div>
+          <p>
+            by
+            <a class="author" href="">Daniel Philip Johnson </a>
+          </p>
         </div>
       </div>
     </footer>

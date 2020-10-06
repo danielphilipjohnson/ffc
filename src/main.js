@@ -178,11 +178,11 @@ var projects = [
 work.iterate(projects);
 
 
-contact = new Contact();
-contact.addEmail("daniel-philip-johnson@gmail.com");
+// contact = new Contact();
+// contact.addEmail("daniel-philip-johnson@gmail.com");
 
-contact.addPhone("(555) 555-5555");
-contact.addFrom("Liverpool");
+// contact.addPhone("(555) 555-5555");
+// contact.addFrom("Liverpool");
 
 
 function footer() {

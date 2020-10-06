@@ -1,0 +1,155 @@
+@import "../mixins";
+
+$form-color: rgb(16, 42, 67);
+
+.form-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 1rem auto;
+  text-align: left;
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 1rem 2rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    // background: url(https://source.unsplash.com/1600x900/?gradient) no-repeat;
+    background: url(../../img/formbg.jpeg) no-repeat;
+    background-size: auto;
+    background-size: cover;
+    color: #fff;
+  }
+
+  .form-container {
+    background-color: #fff;
+    padding: 1rem 3rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #000;
+
+    .description {
+      font-size: 1.2rem;
+      font-weight: bolder;
+      margin-bottom: 2rem;
+      color: $form-color;
+    }
+
+    form {
+      width: 100%;
+      input,
+      textarea {
+        // background: #f7f7f7;
+        background: transparent;
+        padding: 0.75rem 1.15rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid #e1e2eb;
+        border-radius: 3px;
+        transition: border 0.75s;
+        &:hover {
+          border: 1px solid #384bf7;
+        }
+      }
+      textarea {
+        width: 100%;
+      }
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"] {
+      width: 100%;
+    }
+  }
+}
+
+.contact {
+  border-top: 1px solid #ebebf5;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  text-align: left;
+
+  p {
+    color: $form-color;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .info {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    i {
+      color: #6d6d7a;
+      font-size: 1.25rem;
+    }
+
+    span {
+      color: #627d98;
+      margin-left: 1rem;
+    }
+
+    address {
+      display: inline;
+      color: #627d98;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.asterik {
+  color: #e13557;
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 0.8rem;
+}
+
+.labels {
+  padding-bottom: 0.5rem;
+  label {
+    text-transform: uppercase;
+    color: rgb(16, 42, 67);
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #303146;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 1.025rem 15px;
+  font-weight: 600;
+}
+
+// Tablets & Small Laptops
+@include mediaMd {
+  main {
+    padding: 0;
+  };
+  header {
+    padding: 0 1rem;
+  }
+  .form-card {
+    grid-template-columns: 1fr;
+    .image-container {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .form-container {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      padding: 1rem
+    }
+  }
+
+  .select-box .select-button .chevrons {
+
+    padding: 9px 16px;
+
+  }
+}

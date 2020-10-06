@@ -8,3 +8,14 @@
     font-size: 1.25rem;
   }
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-grow: 1;
+  margin-right: 1rem;
+}

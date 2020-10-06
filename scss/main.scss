@@ -1,5 +1,38 @@
 @import "./mixins";
 
+$social-options: (
+  "fa-codepen ": #000,
+  "fa-dribbble": #ea4c89,
+  "fa-behance": #0057ff,
+  "fa-hackerrank": #32c766,
+  "fa-stack-overflow": #f48024,
+  "fa-free-code-camp": #006400,
+  "fa-hammer": #a2b1a2,
+  "fa-wrench": #b22222,
+  "fa-tools": #2f4f4f,
+  "fa-chalkboard-teacher": #483d8b,
+  "fa-mobile": #091553,
+  "fa-desktop": #007C7C,
+  "fa-firefox-browser": #F44B4F,
+);
+
+$portfolio-icons: (
+  "codepen": #000,
+  "dev": #000,
+  "github ": #000,
+  "hackerrank": #32c766,
+  "stack-overflow": #f48024,
+  "free-code-camp": #006400,
+);
+
+
+
+@each $social, $color in $portfolio-icons {
+    .#{$social} {
+      background: $color;
+    }
+}
+
 @import "config";
 @import "defaults";
 @import "utilities";
@@ -12,12 +45,12 @@
 @import "./sitewide/main";
 @import "./sitewide/footer";
 
-
 @import "./pages/about";
 @import "./pages/contact";
 @import "./pages/work";
 
-
 @import "./components/boxes";
 @import "./components/buttons";
 @import "./components/project";
+@import "./components/form";
+@import "./components/select-box";

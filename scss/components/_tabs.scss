@@ -1,0 +1,43 @@
+@import "../mixins";
+
+.tab {
+  position: fixed;
+  left: 1%;
+  top: 40%;
+  z-index: 1000;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 5px;
+  margin-bottom: 0.6rem;
+}
+
+.tab p {
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab p:hover {
+  color: #ddd;
+}
+
+.tab p.active {
+  
+  color: #5a5c85;
+}
+
+.tabcontent {
+  padding: 0px 12px;
+}
+
+// Smartphones
+@include mediaSm {
+  .tab {
+    display: flex;
+    top: unset;
+    left: 40%;
+    bottom: 0;
+  }
+}

@@ -12,8 +12,8 @@ $social-options: (
   "fa-tools": #2f4f4f,
   "fa-chalkboard-teacher": #483d8b,
   "fa-mobile": #091553,
-  "fa-desktop": #007C7C,
-  "fa-firefox-browser": #F44B4F,
+  "fa-desktop": #007c7c,
+  "fa-firefox-browser": #f44b4f,
 );
 
 $portfolio-icons: (
@@ -25,12 +25,10 @@ $portfolio-icons: (
   "free-code-camp": #006400,
 );
 
-
-
 @each $social, $color in $portfolio-icons {
-    .#{$social} {
-      background: $color;
-    }
+  .#{$social} {
+    background: $color;
+  }
 }
 
 @import "config";
@@ -53,4 +51,5 @@ $portfolio-icons: (
 @import "./components/buttons";
 @import "./components/project";
 @import "./components/form";
+@import "./components/tabs";
 @import "./components/select-box";

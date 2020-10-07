@@ -536,34 +536,113 @@ main#contact {
   background: #aeafc7;
   color: #333; }
 
+.section-header {
+  font-size: 1.7511em;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+  text-align: center;
+  border-bottom: 1px solid #424255;
+  padding: 1rem 0.2rem;
+  margin-bottom: 2rem; }
+
 .projects {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
-  .projects img {
-    width: 100%;
-    border: 3px #fff solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #94c85a;
-      transition: all 0.5s ease-out; }
+  .projects .item {
+    position: relative; }
+    .projects .item img {
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px;
+      width: 100%; }
+  .projects .item:hover .overlay {
+    bottom: 0;
+    height: 100%; }
+    .projects .item:hover .overlay .content {
+      animation: fade-left ease 1.25s; }
+    .projects .item:hover .overlay .arrow-btn {
+      animation: fade-in ease 1.75s; }
+    .projects .item:hover .overlay .icon {
+      animation: fade-right ease 2s; }
+    .projects .item:hover .overlay .links {
+      animation: fade-left ease 2.25s; }
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  transition: opacity 0.3s ease-in-out;
+  background: url(../../img/overlay-bg.png) repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease; }
+  .overlay .content {
+    padding: 1rem; }
+    .overlay .content h2 {
+      font-size: 0.9rem; }
+    .overlay .content p {
+      font-size: 0.75rem;
+      color: #c6c7c7; }
+  .overlay .arrow-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase; }
+    .overlay .arrow-btn .arrow-btn-text {
+      margin-right: 0.5rem; }
+  .overlay .links {
+    padding: 1rem;
+    display: flex;
+    justify-content: center; }
+    .overlay .links i {
+      padding: 1rem;
+      background-color: #000;
+      margin-right: 0.5rem;
+      transition: 0.5s ease;
+      border-radius: 4px; }
+      .overlay .links i:hover {
+        background-color: #444343;
+        opacity: 0.8; }
+
+@keyframes fade-in {
+  0% {
+    transform: translateY(-1000px); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-1000px); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(1000px); }
+  100% {
+    transform: translateX(0); } }
 
 @media screen and (min-width: 2500px) {
   .projects {
     /* changed slightly */
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 2499px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 768px) {
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); } }
 
 @media screen and (max-width: 500px) {
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .overlay .content p {
+    display: none; } }
 
 .form-card {
   display: grid;
@@ -677,6 +756,39 @@ main#contact {
   .select-box .select-button .chevrons {
     padding: 9px 16px; } }
 
+.tab {
+  position: fixed;
+  left: 1%;
+  top: 40%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  margin-bottom: 0.6rem; }
+
+.tab p {
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px; }
+
+.tab p:hover {
+  color: #ddd; }
+
+.tab p.active {
+  color: #5a5c85; }
+
+.tabcontent {
+  padding: 0px 12px; }
+
+@media screen and (max-width: 500px) {
+  .tab {
+    display: flex;
+    top: unset;
+    left: 40%;
+    bottom: 0; } }
+
 .option .fa-codepen {
   color: #000; }
 
@@ -711,10 +823,10 @@ main#contact {
   color: #091553; }
 
 .option .fa-desktop {
-  color: #007C7C; }
+  color: #007c7c; }
 
 .option .fa-firefox-browser {
-  color: #F44B4F; }
+  color: #f44b4f; }
 
 .option:nth-child(1):hover ~ .option-bg {
   top: 0px;
@@ -773,12 +885,12 @@ main#contact {
 
 .option:nth-child(12):hover ~ .option-bg {
   top: 440px;
-  background-color: #007C7C;
+  background-color: #007c7c;
   border-radius: 4px 4px 0 0; }
 
 .option:nth-child(13):hover ~ .option-bg {
   top: 480px;
-  background-color: #F44B4F;
+  background-color: #f44b4f;
   border-radius: 4px 4px 0 0; }
 
 .option:nth-child(1) input[type="radio"]:checked ~ .label:before {
@@ -870,7 +982,7 @@ main#contact {
   top: -431px; }
 
 .option:nth-child(12) input[type="radio"]:checked ~ .label:before {
-  background-color: #007C7C;
+  background-color: #007c7c;
   color: #fff;
   border-radius: 4px 4px 0 0; }
 
@@ -878,7 +990,7 @@ main#contact {
   top: -471px; }
 
 .option:nth-child(13) input[type="radio"]:checked ~ .label:before {
-  background-color: #F44B4F;
+  background-color: #f44b4f;
   color: #fff;
   border-radius: 4px 4px 0 0; }
 

@@ -1,53 +1,166 @@
 
+.section-header {
+  font-size: 1.7511em;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+  text-align: center;
+  border-bottom: 1px solid #424255;
+  padding: 1rem 0.2rem;
+  margin-bottom: 2rem;
+}
 
-
-// Work/Projects
 .projects {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
 
-  img {
-    width: 100%;
-    border: 3px #fff solid;
+  .item {
+    position: relative;
 
-    &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
-      @include easeOut;
+    img {
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px;
+      width: 100%;
+    }
+  }
+  .item:hover .overlay {
+    bottom: 0;
+    height: 100%;
+    .content {
+      animation: fade-left ease 1.25s;
+    }
+    .arrow-btn {
+      animation: fade-in ease 1.75s;
+    }
+    .icon {
+      animation: fade-right ease 2s;
+    }
+    .links {
+      animation: fade-left ease 2.25s;
+    }
+  }
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  transition: opacity 0.3s ease-in-out;
+  background: url(../../img/overlay-bg.png) repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+
+  // bottom: 0;
+  // height: 100%;
+
+  transition: 0.5s ease;
+
+  .content {
+    padding: 1rem;
+    h2 {
+      font-size: 0.9rem;
+    }
+    p {
+      font-size: 0.75rem;
+      color: #c6c7c7;
+    }
+  }
+
+  .arrow-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  
+    .arrow-btn-text {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .links {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    i {
+      padding: 1rem;
+      background-color: #000;
+      margin-right: 0.5rem;
+      transition: 0.5s ease;
+      border-radius: 4px;
+      &:hover {
+        background-color: rgb(68, 67, 67);
+        opacity: 0.8;
+      }
     }
   }
 }
 
 
 
+@keyframes fade-in {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
 // Widescreens
 @include mediaXl {
-.projects {
-  /* changed slightly */
-  grid-template-columns: repeat(4, 1fr);
-}
+  .projects {
+    /* changed slightly */
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // Desktops & Laptops
 @include mediaLg {
-.projects {
-  grid-template-columns: repeat(3, 1fr);
-}
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 // Tablets & Small Laptops
 @include mediaMd {
-
-.projects {
-  grid-template-columns: repeat(2, 1fr);
-}
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 // Smartphones
 @include mediaSm {
-
-.projects {
-  grid-template-columns: 1fr;
-}
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .overlay {
+    .content {
+      p {
+        display: none;
+      }
+    }
+  }
 }

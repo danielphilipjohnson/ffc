@@ -426,7 +426,7 @@ var projects = [
     },
 ];
 
-work.iterate(projects);
+// work.iterate(projects);
 
 
 // contact = new Contact();

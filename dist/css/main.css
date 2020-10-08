@@ -556,7 +556,8 @@ main#contact {
       width: 100%; }
   .projects .item:hover .overlay {
     bottom: 0;
-    height: 100%; }
+    height: 100%;
+    padding-top: 24px; }
     .projects .item:hover .overlay .content {
       animation: fade-left ease 1.25s; }
     .projects .item:hover .overlay .arrow-btn {
@@ -579,8 +580,6 @@ main#contact {
   transition: 0.5s ease; }
   .overlay .content {
     padding: 1rem; }
-    .overlay .content h2 {
-      font-size: 0.9rem; }
     .overlay .content p {
       font-size: 0.75rem;
       color: #c6c7c7; }
@@ -1171,3 +1170,60 @@ main#contact {
   100% {
     top: 0;
     opacity: 1; } }
+
+.bar {
+  display: block;
+  position: relative;
+  height: 24px;
+  background-color: #ddd;
+  width: 100%;
+  color: #6a6a6a;
+  z-index: 10;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
+  .bar .fa-firefox,
+  .bar .fa-blog {
+    position: absolute;
+    z-index: 12;
+    top: 3px;
+    left: 10px;
+    height: 23px;
+    width: 16px;
+    display: inline-block;
+    color: #fd7e14; }
+  .bar .window-buttons {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background-color: #ff5f57;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    right: 38px; }
+    .bar .window-buttons:before {
+      content: " ";
+      left: 16px;
+      background-color: #ffbd2e;
+      top: 0;
+      height: 12px;
+      width: 12px;
+      display: inline-block;
+      border-radius: 50%;
+      position: absolute; }
+    .bar .window-buttons:after {
+      content: " ";
+      left: 32px;
+      background-color: #28ca41;
+      top: 0;
+      height: 12px;
+      width: 12px;
+      display: inline-block;
+      border-radius: 50%;
+      position: absolute; }
+  .bar .title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.1rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    letter-spacing: -0.3px; }

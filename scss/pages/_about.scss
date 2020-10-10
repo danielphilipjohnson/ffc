@@ -1,68 +1,108 @@
 @import "../mixins";
 
-// main#about {
-//   padding-top: 4rem;
-// }
-.about-info {
+.about-container {
   display: grid;
-  grid-gap: 30px;
-  grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 3fr;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px;
+}
 
-  .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
+@media screen and (min-width: 769px) and (max-width: 1394px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 1395px) and (max-width: 2000px) {
+  .about-container {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.bio {
+  background-color: #3a3c55;
+  padding: 2rem 3rem 1rem 3rem;
+  font-size: 1.25rem;
+
+  &-name {
+    margin-bottom: 1rem;
+    h2 {
+      font-size: 2rem;
+      font-weight: bolder;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+    h3 {
+      font-size: 1.5rem;
+      font-weight: bolder;
+      color: #94c85a;
+      display: inline-block;
+    }
   }
 
-  .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
+  &-content {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+
+    h3, p {
+      margin-bottom: 1rem;
+    }
+
+    .mission {
+      border-left: 3px solid #94c85a;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
   }
 
-  .job-1 {
-    grid-area: job1;
+  &-education {
+    h2 {
+      text-align: center;
+    }
   }
+}
 
-  .job-2 {
-    grid-area: job2;
-  }
 
-  .job-3 {
-    grid-area: job3;
-  }
+@mixin card-base {
+  background: lighten($primary-color, 5);
+  border-bottom: $secondary-color 5px solid;
+}
 
-  .job {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
-  }
+.job {
+  @include card-base();
+  padding: 0.5rem;
 }
 
 
 // Tablets & Small Laptops
 @include mediaMd {
-
   main#about {
     padding-top: 4rem;
   }
 
-  .about-info {
-    grid-template-areas:
-      "bioimage"
-      "bio"
-      "job1"
-      "job2"
-      "job3";
-
+  .about-container {
     grid-template-columns: 1fr;
 
     .bio {
-      font-size: 1.25rem;
+      font-size: 1.05rem;
+      padding: 1.5rem 0.95rem;
     }
   }
+}
 
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media screen and (min-width: 650px) and (max-width: 1194px) {
+  .education-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1195px) {
+  .education-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

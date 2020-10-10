@@ -31,13 +31,13 @@ $select-width: 100%;
 
   @for $i from 1 through length($list) {
     .option:nth-child(#{$i}) input[type="radio"]:checked ~ .label:before {
-      @debug nth($list, $i);
+      // @debug nth($list, $i);
       background-color: nth($list, $i);
       color: #fff;
       border-radius: 4px 4px 0 0;
     }
 
-    @debug $counter;
+    // @debug $counter;
     .option:nth-child(#{$i}) input[type="radio"]:checked ~ .opt-val {
       top: $counter;
     }

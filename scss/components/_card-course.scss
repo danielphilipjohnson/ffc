@@ -1,0 +1,81 @@
+.course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: #94c85a 5px solid;
+  border-radius: 2px;
+  padding: 2rem;
+
+  text-align: left;
+
+  background-color: #fff;
+  color: #000;
+
+  &-logo {
+    width: 75px;
+    height: 75px;
+
+    border: 1px solid #eee;
+    border-radius: 6px;
+
+    padding: 0.5rem;
+
+    margin-bottom: 1rem;
+  }
+
+  &-content {
+    text-align: center;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .info {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    margin: 0;
+  }
+  .grade {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+    color: #6e7881;
+  }
+
+  .btn-certificate {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+
+/* continue higher */
+@media screen and (min-width: 650px) {
+
+    .course {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      padding: 1rem;
+
+      .course-logo {
+        margin-right: 0.75rem;
+      }
+
+      .course-content {
+        text-align: left;
+      }
+    }
+}

@@ -1,92 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="crossorigin="anonymous"
+      />
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <title>About Me</title>
+  </head>
 
-  <link rel="stylesheet" href="./dist/css/main.css">
-  <title>About Me</title>
-</head>
-
-<body>
-  <aside>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
+  <body>
+    <aside>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
       </div>
-      <div class="menu-nav">
-        <ul>
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">
-              Home
-            </a>
-          </li>
-          <li class="nav-item current">
-            <a href="about.html" class="nav-link">
-              About Me
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="work.html" class="nav-link">
-              My Work
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">
-              How To Reach Me
-            </a>
-          </li>
 
-        </ul>
-        <div class="icons">
-          <a href="https://twitter.com/danielPhilipJo1">
-            <i class="fab fa-twitter fa-2x"></i>
-          </a>
-          <a href="https://www.facebook.com/DanielPhilipJohnson">
-            <i class="fab fa-facebook fa-2x"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/daniel-philip-johnson/">
-            <i class="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a href="https://github.com/danielphilipjohnson/">
-            <i class="fab fa-github fa-2x"></i>
-          </a>
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <div class="menu-nav">
+          <ul>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                Home
+              </a>
+            </li>
+            <li class="nav-item current">
+              <a href="about.html" class="nav-link">
+                About Me
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="work.html" class="nav-link">
+                My Work
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">
+                How To Reach Me
+              </a>
+            </li>
+
+          </ul>
+          <div class="icons">
+            <a href="https://twitter.com/danielPhilipJo1">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/DanielPhilipJohnson">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/daniel-philip-johnson/">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/danielphilipjohnson/">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+
+          </div>
+
 
         </div>
-      
-       
+      </nav>
+    </aside>
+
+    <main id="about">
+      <h1 class="lg-heading fade-in-left">
+        About
+        <span class="text-secondary">Me</span>
+      </h1>
+      <h2 class="sm-heading">
+        Let me tell you a few things...
+      </h2>
+
+      <div class="about-container">
+        <div class="profile-card">
+          <div class="profile-card-head">
+            <img class="card-head-bg" src="./img/bg.png" alt="">
+          </div>
+
+          <img src="./img/profile-md.jpg" alt="Daniel johnson"
+            class="profile-card-image">
+
+          <div class="profile-card-body">
+            <h2 class="profile-name">Daniel <span>Philip</span> Johnson</h2>
+            <div class="profile-card-body-item">
+              <h3>Occupation</h3>
+              <h4>React Developer</h4>
+            </div>
+
+            <div class="profile-card-body-item">
+              <h3>Graduated</h3>
+              <h4>
+                <g-emoji class="g-emoji" alias="mortar_board"
+                  fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f393.png"><img
+                    class="emoji" alt="mortar_board"
+                    src="https://github.githubassets.com/images/icons/emoji/unicode/1f393.png"
+                    width="20" height="20"></g-emoji> Bsc Psychology |
+                University of
+                Plymouth <g-emoji class="g-emoji" alias="school"
+                  fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3eb.png"><img
+                    class="emoji" alt="school"
+                    src="https://github.githubassets.com/images/icons/emoji/unicode/1f3eb.png"
+                    width="20" height="20"></g-emoji>
+              </h4>
+            </div>
+
+            <div class="profile-card-body-item">
+              <h3>Location</h3>
+              <i class="fas fa-map-marker-alt"></i>
+              <address>
+                Cornwall,
+                United Kingdom
+              </address>
+            </div>
+
+            <div class="profile-card-body-item">
+              <h3>Email</h3>
+              <i class="fas fa-phone"></i>
+              <span>
+                +44 555-5555
+              </span>
+            </div>
+
+            <div class="profile-card-body-item">
+              <h3>For hire</h3>
+              <i class="fas fa-envelope"></i>
+              <span>daniel-philip-johnson@gmail.com</span>
+            </div>
+
+            <div class="profile-card-body-item">
+              <h3>Availability</h3>
+              <p>Freelance: Available</p>
+            </div>
+
+            <div class="profile-card-body-item">
+              <h3>What I use</h3>
+              <p><g-emoji class="g-emoji" alias="desktop_computer"
+                  fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f5a5.png"><img
+                    class="emoji" alt="desktop_computer"
+                    src="https://github.githubassets.com/images/icons/emoji/unicode/1f5a5.png"
+                    width="20" height="20"></g-emoji>
+                Kubuntu 20.04 and Manjaro 20.0.3</p>
+            </div>
+
+            <div class="btn-group">
+              <a class="btn-outline" href="./work.html">View my work</a>
+              <a class="btn-outline" href="#"><i class="fas
+                  fa-graduation-cap"></i> Resume</a>
+            </div>
+          </div>
+
+          <div class="profile-card-footer">
+            <div class="github-stats">
+              <h2>Github Statistics</h2>
+              <p>
+                <a
+                  href="https://github.com/danielphilipjohnson/github-readme-stats"><img
+                    src="https://camo.githubusercontent.com/db37043947c98251b225e363ea8a2bdb30e2122b/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d64616e69656c7068696c69706a6f686e736f6e266c61796f75743d636f6d70616374"
+                    alt="Top Langs"
+                    data-canonical-src="https://github-readme-stats.vercel.app/api/top-langs/?username=danielphilipjohnson&amp;layout=compact"
+                    style="max-width:100%;"></a>
+              </p>
+            </div>
+            <div class="connect">
+              <h2>Connect</h2>
+              <div class="boxes sm">
+                <div class="dev">
+                  <i class="fab fa-dev"></i>
+                </div>
+                <div class="hackerrank">
+                  <i class="fab fa-hackerrank"></i>
+                </div>
+                <div class="codepen">
+                  <i class="fab fa-codepen"></i>
+                </div>
+                <div class="stack-overflow">
+                  <i class="fab fa-stack-overflow"></i>
+                </div>
+                <div class="free-code-camp">
+                  <i class="fab fa-free-code-camp"></i>
+                </div>
+                <div class="github">
+                  <i class="fab fa-github"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bio">
+          <div class="bio-content">
+            <h3 class="text-secondary">Biography:</h3>
+            <h4 class="mission">Mission driven react developer with a passion to
+              create apps that allows you to express your ideas.</h4>
+
+            <p>I completed Free Code Camp in February 15, 2019. Making websites
+              started as a hobby in the past. However, after experiencing issues
+              with my job during quaratine with covid
+              I started to take coursera courses and decided to pursue a career
+              in
+              web development. So recently I have been updating my old projects
+              to
+              make them more modern and to refresh my skills with Udemy courses.</p>
+            <p>Current Focus:
+              <span class="text-secondary">Accessibility</span>
+              //
+              <span class="text-secondary">React</span>
+              //
+              <span class="text-secondary">Python</span>
+            </p>
+          </div>
+
+
+          <div class="tab">
+            <p class="tablinks" onclick="openTab(event, 'education')"
+              id="defaultOpen"><i class="far fa-dot-circle"></i></p>
+
+            <p class="tablinks" onclick="openTab(event, 'skills')"><i class="far
+                fa-dot-circle"></i></p>
+          </div>
+
+          <div id="education" class="bio-education tabcontent">
+            <h2 class="text-secondary">Education</h2>
+
+            <div class="education-grid">
+              <div class="card course">
+                <img class="course-logo" src="./img/course-logos/hong.png">
+                <div class="course-content">
+                  <h3>Full-Stack Web Development with React</h3>
+                  <p class="info">University of Hong Kong</p>
+                  <p class="grade">
+                    <span class="date">Issued Aug 2020</span>
+                  </p>
+                  <a class="btn-certificate" href=""><i class="fas
+                      fa-graduation-cap"></i>View
+                    Certificate</a>
+                </div>
+              </div>
+
+              <div class="course">
+                <img class="course-logo" src="./img/course-logos/michigan.png">
+                <div class="course-content">
+                  <h3>Web Applications for Everybody</h3>
+                  <p class="info">University of Michigan</p>
+                  <p class="grade">
+                    <span class="date">June 2020</span>
+                  </p>
+                  <a class="btn-certificate" href=""><i class="fas
+                      fa-graduation-cap"></i>View
+                    Certificate</a>
+                </div>
+              </div>
+
+              <div class="course">
+                <img class="course-logo" src="./img/course-logos/google.png">
+                <div class="course-content">
+                  <h3>Google
+                    IT Automation with Python Specialization</h3>
+                  <p class="info">Google</p>
+                  <p class="grade">
+                    <span class="date">March 2020</span>
+                  </p>
+                  <a class="btn-certificate" href=""><i class="fas
+                      fa-graduation-cap"></i>View
+                    Certificate</a>
+                </div>
+              </div>
+
+              <div class="course">
+                <img class="course-logo" src="./img/course-logos/plymouth.png">
+                <div class="course-content">
+                  <h3>BSc Psychology</h3>
+                  <p class="info">University of Plymouth</p>
+
+                  <p class="grade">
+                    <span class="date">April
+                      2014</span>
+                  </p>
+                  <a class="btn-certificate" href=""><i class="fas
+                      fa-graduation-cap"></i>View
+                    Certificate</a>
+                </div>
+              </div>
+
+              <div class="course">
+                <img class="course-logo" src="./img/course-logos/plymouth.png">
+                <div class="course-content">
+                  <h3>HND Applied Psychology</h3>
+                  <p class="info">University of Plymouth</p>
+                  <p class="grade">
+                    <span class="date">Issued May 2012</span>
+                  </p>
+                  <a class="btn-certificate" href=""><i class="fas
+                      fa-graduation-cap"></i>View
+                    Certificate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="skills" class="tabcontent">
+            <h2 class="text-secondary">Skills</h2>
+            <div class="skills">
+
+              <!-- HTML -->
+              <div class="skill-card">
+                <div class="bar">
+                  <i class="fab fa-firefox"></i>
+                  <i class="window-buttons"></i>
+                  <span class="title">HTML</span>
+                </div>
+
+                <div class="skill-card-logos">
+                  <div class="logo">
+                    <img src="./img/logos/html.png" alt="html">
+                    <p>HTML5</p>
+                  </div>
+
+                  <div class="logo">
+                    <img src="./img/logos/jsx.png" alt="">
+                    <p>JSX</p>
+                  </div>
+
+                  <div class="logo">
+                    <img src="./img/logos/pug.png" alt="">
+                    <p>Pug</p>
+                  </div>
+                  <div class="logo">
+                    <img src="./img/logos/haml.png" alt="">
+                    <p>Haml</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- JS -->
+              <div class="skill-card">
+                <div class="bar">
+                  <i class="fab fa-firefox"></i>
+                  <i class="window-buttons"></i>
+                  <span class="title">Javascript</span>
+                </div>
+
+                <div class="skill-card-logos">
+                  <div class="logo">
+                    <img src="./img/logos/js.png" alt="js">
+                    <p>JS</p>
+                  </div>
+
+                  <div class="logo">
+                    <img src="./img/logos/typescript.webp" alt="">
+                    <p>Typescript</p>
+                  </div>
+
+                  <!-- <div class="logo">
+                  <img src="./img/logos/jquery.png" alt="">
+                  <p>Jquery</p>
+                </div> -->
+                  <div class="logo">
+                    <img src="./img/logos/react.svg" alt="react">
+                    <p>React</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CSS -->
+              <div class="skill-card">
+                <div class="bar">
+                  <i class="fab fa-firefox"></i>
+                  <i class="window-buttons"></i>
+                  <span class="title">CSS-Framework</span>
+                </div>
+
+
+                <div class="skill-card-logos">
+                  <div class="logo">
+                    <img src="./img/logos/css.png" alt="css">
+                    <p>CSS3</p>
+                  </div>
+                  <div class="logo">
+                    <img src="./img/logos/sass.svg" alt="sass">
+                    <p>Sass</p>
+                  </div>
+
+                  <div class="logo">
+                    <img src="./img/logos/foundation.png" alt="sass">
+                    <p>Foundation</p>
+                  </div>
+
+                  <div class="logo">
+                    <img src="./img/logos/bs4.png" alt="bootstrap 4">
+                    <p>Bootstrap</p>
+                  </div>
+
+                  <div class="logo">
+                    <img src="./img/logos/materialize.png" alt="materialize">
+                    <p>Materialize</p>
+                  </div>
+                  <!-- <div class="logo">
+                    <img src="./img/logos/tailwind.png" alt="tailwind css">
+                    <p>Tailwind</p>
+                  </div> -->
+                </div>
+              </div>
+
+              <!-- React -->
+              <div class="skill-card">
+                <div class="bar">
+                  <i class="fab fa-firefox"></i>
+                  <i class="window-buttons"></i>
+                  <span class="title">React</span>
+                </div>
+
+                <div class="skill-card-logos">
+                  <div class="logo">
+                    <img src="./img/logos/redux.png" alt="redux">
+                    <p>Redux</p>
+                  </div>
+                  <div class="logo">
+                    <img src="./img/logos/GraphQL.png" alt="GraphQL">
+                    <p>GraphQL</p>
+                  </div>
+                  <div class="logo">
+                    <img src="./img/logos/apollo.png" alt="apollo">
+                    <p>Apollo</p>
+                  </div>
+                  <div class="logo">
+                    <img src="./img/logos/react-router.png" alt="react-router">
+                    <p>React Router</p>
+                  </div>
+
+                  <div class="logo">
+                    <img src="./img/logos/gatsby.png" alt="gatsby">
+                    <p>Gatsby</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="bar">
+                  <i class="fab fa-firefox"></i>
+                  <i class="window-buttons"></i>
+                  <span class="title">Automation</span>
+                </div>
+
+                <div class="skill-card-logos">
+                  <div class="logo">
+                    <img
+                      src="./img/logos/git.png" alt="git">
+                    <p>Git</p>
+                  </div>
+
+                  <div class="logo">
+                    <img
+                      src="./img/logos/webpack.png" alt="webpack">
+                    <p>Webpack</p>
+                  </div>
+
+                  <div class="logo">
+                    <img src="./img/logos/gulp.png" alt="">
+                    <p>Gulp</p>
+                  </div>
+
+                  <div class="logo">
+                    <img src="./img/logos/grunt.png" alt="">
+                    <p>Grunt</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="bar">
+                  <i class="fab fa-firefox"></i>
+                  <i class="window-buttons"></i>
+                  <span class="title">Testing</span>
+                </div>
+
+                <div class="skill-card-logos">
+
+
+                  <div class="logo">
+                    <img src="./img/logos/jest.png" alt="jest">
+                    <p>Jest</p>
+                  </div>
+
+                  <div class="logo">
+                    <img src="./img/logos/Cypress.png" alt="cypress">
+                    <p>Cypress</p>
+                  </div>
+
+                  <div class="logo">
+                    <img src="./img/logos/jasmine.png" alt="jasmine">
+                    <p>Jasmine</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="bar">
+                  <i class="fab fa-firefox"></i>
+                  <i class="window-buttons"></i>
+                  <span class="title">Back-End</span>
+                </div>
+
+                <div class="skill-card-logos">
+                  <div class="logo">
+                    <img src="./img/logos/node.png" alt="node">
+                    <p>Node</p>
+                  </div>
+
+                  <div class="logo">
+                    <img src="./img/logos/mongo.png" alt="mongo">
+                    <p>Mongo DB</p>
+                  </div>
+
+                  <!-- <div class="logo">
+                    <img src="./img/logos/expressjs.png" alt="expressjs">
+                    <p>Expressjs</p>
+                  </div> -->
+
+                  <div class="logo">
+                    <img src="./img/logos/redis.webp" alt="redis">
+                    <p>Redis</p>
+                  </div>
+
+                  <div class="logo">
+                    <img src="./img/logos/nextjs.png" alt="nextjs">
+                    <p>Nextjs</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
-  </aside>
-  
-  <main id="about" >
-    <h1 class="lg-heading fade-in-left">
-      About
-      <span class="text-secondary">Me</span>
-    </h1>
-    <h2 class="sm-heading">
-      Let me tell you a few things...
-    </h2>
-    <div class="about-info">
-
-      <div class="bio">
-        <h3 class="text-secondary">BIO</h3>
-      </div>
-    </div>
-  </main>
-
-
-
+    </main>
 
     <!-- Footer -->
     <footer class="main-footer">
@@ -103,7 +559,7 @@
               <a href="./contact.html">Contact</a>
             </p>
           </div>
-  
+
           <ul class="social-icons">
             <li class="nav-item twitter">
               <a href="https://twitter.com/danielp_johnson" target="_blank">
@@ -112,40 +568,46 @@
             </li>
 
             <li class="nav-item facebook">
-              <a href="https://www.facebook.com/DanielPhilipJohnson" target="_blank">
+              <a href="https://www.facebook.com/DanielPhilipJohnson"
+                target="_blank">
                 <i class="fab fa-facebook"></i>
               </a>
             </li>
 
             <li class="nav-item github">
-              <a href="https://github.com/danielphilipjohnson/" target="_blank">
+              <a href="https://github.com/danielphilipjohnson/"
+                target="_blank">
                 <i class="fab fa-github"></i>
               </a>
             </li>
 
             <li class="nav-item linkedin">
-              <a href="https://www.linkedin.com/in/daniel-philip-johnson/" target="_blank">
+              <a href="https://www.linkedin.com/in/daniel-philip-johnson/"
+                target="_blank">
                 <i class="fab fa-linkedin"></i>
               </a>
             </li>
           </ul>
         </div>
-        
+
         <div class="footer-bottom">
-          <p>Copyright &copy; <span>2020.</span> All Rights Reserved | Designed and built with </p>
-            <div class="heart-container">
-              <div class="heart"></div>
-            </div>
-            <p>
-              by 
-              <a class="author" href="">Daniel Philip Johnson </a>
-            </p>
+          <p>Copyright &copy; <span>2020.</span> All Rights Reserved |
+            Designed
+            and built with </p>
+          <div class="heart-container">
+            <div class="heart"></div>
+          </div>
+          <p>
+            by
+            <a class="author" href="">Daniel Philip Johnson </a>
+          </p>
         </div>
       </div>
     </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="./js/bundle.js"></script>
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script>
+    <script src="./js/bundle.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

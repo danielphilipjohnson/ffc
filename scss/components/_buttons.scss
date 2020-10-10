@@ -1,9 +1,16 @@
 // Button Styles
 .btn {
-  display: block;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+
   &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
@@ -20,4 +27,30 @@
   @extend .btn;
   background: lighten($primary-color, 50);
   color: #333;
+}
+
+.btn-outline {
+  @extend .btn;
+  border: 2px solid #000;
+  color: #000;
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+.btn-certificate {
+  @extend .btn;
+  background: #303146;
+  color: #fff;
+}
+
+.btn-download {
+  @extend .btn;
+  background-color: #303146;
+  border-radius: 5px;
+  color: #fff;
+
+  i {
+    color: #fff;
+    margin-right: 0.5rem;
+  }
 }

@@ -13,11 +13,35 @@
     @include easeOut;
 
     &:hover {
-      padding: 0.5rem 1.5rem;
+      // padding: 0.5rem 1.5rem;
       background: #303146;
       color: #fff;
       span {
         color: set-text-color($secondary-color);
+      }
+    }
+  }
+
+  &.sm {
+
+    color: #fff;
+
+    div {
+      font-size: 1.5rem;
+      border: none;
+      padding: 0.5rem 0.95rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-radius: 5px;
+      @include easeOut;
+
+      /* repeated make a mixin */
+      &:hover {
+        background: #303146;
+        color: #fff;
+        span {
+          color: set-text-color($secondary-color);
+        }
       }
     }
   }

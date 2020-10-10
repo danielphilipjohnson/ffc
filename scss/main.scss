@@ -51,6 +51,9 @@ $window-bar-height: 24px;
 
 @import "./components/boxes";
 @import "./components/buttons";
+@import "./components/card-course";
+@import "./components/card-profile";
+@import "./components/card-skill";
 @import "./components/project";
 @import "./components/form";
 @import "./components/tabs";
@@ -120,4 +123,29 @@ $window-bar-height: 24px;
     font-weight: bolder;
     letter-spacing: -0.3px;
   }
+}
+
+.btn-group {
+  text-align: center;
+  border-bottom: 3px solid #eee;
+  padding: 1rem 0;
+  
+}
+
+.github-stats {
+  padding: 1rem 0;
+  border-bottom: 3px solid #eee;
+  h2 {
+    color: #000;
+    
+    font-weight: bolder;
+    padding: 1rem;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.connect {
+  padding: 2rem 0 1rem 0;
 }

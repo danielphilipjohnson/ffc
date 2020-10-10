@@ -30,9 +30,9 @@ var bio = new Bio();
 var txt = `I completed Free Code Camp in February 15, 2019. Making websites started as a hobby in the past. However, after experiencing issues with my job during quaratine with covid
 I started to take coursera courses and decided to pursue a career in web development. So recently I have been updating my old projects to make them more modern and to refresh my skills with Udemy courses.`;
 
-bio.add(txt);
+// bio.add(txt);
 
-bio.addImage("./img/profile-md.jpg", "Daniel johnson");
+// bio.addImage("./img/profile-md.jpg", "Daniel johnson");
 
 var jobs = [
     {
@@ -50,7 +50,7 @@ var jobs = [
     },
 ];
 
-bio.addWork(jobs);
+// bio.addWork(jobs);
 
 
 

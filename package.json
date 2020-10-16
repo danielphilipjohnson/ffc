@@ -6,6 +6,7 @@
   "homepage": "https://danielphilipjohnson.github.io/fcc",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "imageOpt": "node ./optimiseImage.js",
     "deploy": "gh-pages -d dist",
     "concat:js": "concat-cli -f src/*.js -o js/bundle.js",
     "watch:js": "onchange 'src/*.js' -- npm run concat:js",
@@ -19,6 +20,9 @@
     "gh-pages": "^1.2.0"
   },
   "devDependencies": {
+    "imagemin": "^7.0.1",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-pngquant": "^9.0.1",
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
     "onchange": "^7.0.2"

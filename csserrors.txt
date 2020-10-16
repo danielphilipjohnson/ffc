@@ -1,0 +1,1311 @@
+
+
+csslint: There are 262 problems in /home/universidad/Git/Repos/ffc/build/css/main.css.
+
+main.css
+1: warning at line 19, col 1
+The universal selector (*) is known to be slow.
+* {
+
+main.css
+2: warning at line 20, col 3
+The box-sizing property isn't supported in IE6 and IE7.
+  box-sizing: border-box;
+
+main.css
+3: warning at line 24, col 1
+Rule doesn't have all its properties in alphabetical order.
+body {
+
+main.css
+4: warning at line 31, col 3
+Don't use IDs in selectors.
+  body#bg-img {
+
+main.css
+5: warning at line 31, col 3
+Element (body#bg-img) is overqualified, just use #bg-img without element name.
+  body#bg-img {
+
+main.css
+6: warning at line 35, col 5
+Don't use IDs in selectors.
+    body#bg-img:after {
+
+main.css
+7: warning at line 35, col 5
+Element (body#bg-img:after) is overqualified, just use #bg-img without element name.
+    body#bg-img:after {
+
+main.css
+8: warning at line 35, col 5
+Rule doesn't have all its properties in alphabetical order.
+    body#bg-img:after {
+
+main.css
+9: warning at line 43, col 7
+Fallback background (hex or RGB) should precede RGBA background.
+      background: rgba(48, 49, 70, 0.9); }
+
+main.css
+10: warning at line 45, col 1
+Rule doesn't have all its properties in alphabetical order.
+h1,
+
+main.css
+11: warning at line 50, col 3
+Heading (h1) has already been defined.
+  h1.lg-heading,
+
+main.css
+12: warning at line 51, col 3
+Heading (h2) has already been defined.
+  h2.lg-heading,
+
+main.css
+13: warning at line 52, col 3
+Heading (h3) has already been defined.
+  h3.lg-heading {
+
+main.css
+14: warning at line 54, col 3
+Heading (h1) has already been defined.
+  h1.sm-heading,
+
+main.css
+15: warning at line 54, col 3
+Rule doesn't have all its properties in alphabetical order.
+  h1.sm-heading,
+
+main.css
+16: warning at line 55, col 3
+Heading (h2) has already been defined.
+  h2.sm-heading,
+
+main.css
+17: warning at line 56, col 3
+Heading (h3) has already been defined.
+  h3.sm-heading {
+
+main.css
+18: warning at line 59, col 5
+Fallback background (hex or RGB) should precede RGBA background.
+    background: rgba(52, 53, 76, 0.5); }
+
+main.css
+19: warning at line 68, col 1
+Rule doesn't have all its properties in alphabetical order.
+aside {
+
+main.css
+20: warning at line 95, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .logo img {
+
+main.css
+21: warning at line 100, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .logo p {
+
+main.css
+22: warning at line 104, col 1
+Rule doesn't have all its properties in alphabetical order.
+.menu-btn {
+
+main.css
+23: warning at line 111, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .menu-btn .btn-line {
+
+main.css
+24: warning at line 118, col 1
+Rule doesn't have all its properties in alphabetical order.
+.menu {
+
+main.css
+25: warning at line 124, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .menu-branding {
+
+main.css
+26: warning at line 133, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .menu-nav {
+
+main.css
+27: warning at line 135, col 5
+Using height with padding can sometimes make elements larger than you expect.
+    padding: 3rem 1.5rem;
+
+main.css
+28: warning at line 135, col 5
+Using width with padding can sometimes make elements larger than you expect.
+    padding: 3rem 1.5rem;
+
+main.css
+29: warning at line 150, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .menu-nav .icons {
+
+main.css
+30: warning at line 153, col 7
+Rule doesn't have all its properties in alphabetical order.
+      .menu-nav .icons a {
+
+main.css
+31: warning at line 162, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .menu-branding .portrait {
+
+main.css
+32: warning at line 167, col 7
+Using height with border can sometimes make elements larger than you expect.
+      border: solid 3px #94c85a; }
+
+main.css
+33: warning at line 167, col 7
+Using width with border can sometimes make elements larger than you expect.
+      border: solid 3px #94c85a; }
+
+main.css
+34: warning at line 171, col 11
+Adjoining classes: .menu   .nav-item.current > a
+    .menu .nav-item.current > a {
+
+main.css
+35: warning at line 173, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .menu .nav-link {
+
+main.css
+36: warning at line 198, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .menu-nav,
+
+main.css
+37: warning at line 203, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .menu-nav {
+
+main.css
+38: warning at line 210, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .menu-branding .portrait {
+
+main.css
+39: warning at line 220, col 1
+Rule doesn't have all its properties in alphabetical order.
+.area {
+
+main.css
+40: warning at line 225, col 1
+Rule doesn't have all its properties in alphabetical order.
+.circles {
+
+main.css
+41: warning at line 233, col 1
+Rule doesn't have all its properties in alphabetical order.
+.circles li {
+
+main.css
+42: warning at line 239, col 3
+Fallback background (hex or RGB) should precede RGBA background.
+  background: rgba(255, 255, 255, 0.2);
+
+main.css
+43: warning at line 243, col 1
+Rule doesn't have all its properties in alphabetical order.
+.circles li:nth-child(1) {
+
+main.css
+44: warning at line 249, col 1
+Rule doesn't have all its properties in alphabetical order.
+.circles li:nth-child(2) {
+
+main.css
+45: warning at line 256, col 1
+Rule doesn't have all its properties in alphabetical order.
+.circles li:nth-child(3) {
+
+main.css
+46: warning at line 262, col 1
+Rule doesn't have all its properties in alphabetical order.
+.circles li:nth-child(4) {
+
+main.css
+47: warning at line 269, col 1
+Rule doesn't have all its properties in alphabetical order.
+.circles li:nth-child(5) {
+
+main.css
+48: warning at line 275, col 1
+Rule doesn't have all its properties in alphabetical order.
+.circles li:nth-child(6) {
+
+main.css
+49: warning at line 281, col 1
+Rule doesn't have all its properties in alphabetical order.
+.circles li:nth-child(7) {
+
+main.css
+50: warning at line 287, col 1
+Rule doesn't have all its properties in alphabetical order.
+.circles li:nth-child(8) {
+
+main.css
+51: warning at line 294, col 1
+Rule doesn't have all its properties in alphabetical order.
+.circles li:nth-child(9) {
+
+main.css
+52: warning at line 301, col 1
+Rule doesn't have all its properties in alphabetical order.
+.circles li:nth-child(10) {
+
+main.css
+53: warning at line 309, col 3
+Rule doesn't have all its properties in alphabetical order.
+  0% {
+
+main.css
+54: warning at line 313, col 3
+Rule doesn't have all its properties in alphabetical order.
+  100% {
+
+main.css
+55: warning at line 321, col 1
+Rule doesn't have all its properties in alphabetical order.
+.heart {
+
+main.css
+56: warning at line 347, col 1
+Rule doesn't have all its properties in alphabetical order.
+main {
+
+main.css
+57: warning at line 350, col 3
+Rule doesn't have all its properties in alphabetical order.
+  main .icons {
+
+main.css
+58: warning at line 358, col 3
+Don't use IDs in selectors.
+  main#home {
+
+main.css
+59: warning at line 358, col 3
+Element (main#home) is overqualified, just use #home without element name.
+  main#home {
+
+main.css
+60: warning at line 362, col 5
+Don't use IDs in selectors.
+    main#home h1 {
+
+main.css
+61: warning at line 362, col 5
+Element (main#home) is overqualified, just use #home without element name.
+    main#home h1 {
+
+main.css
+62: warning at line 362, col 15
+Heading (h1) should not be qualified.
+    main#home h1 {
+
+main.css
+63: warning at line 362, col 15
+Heading (h1) has already been defined.
+    main#home h1 {
+
+main.css
+64: warning at line 375, col 5
+Don't use IDs in selectors.
+    main#home h1 {
+
+main.css
+65: warning at line 375, col 5
+Element (main#home) is overqualified, just use #home without element name.
+    main#home h1 {
+
+main.css
+66: warning at line 375, col 15
+Heading (h1) should not be qualified.
+    main#home h1 {
+
+main.css
+67: warning at line 375, col 15
+Heading (h1) has already been defined.
+    main#home h1 {
+
+main.css
+68: warning at line 375, col 5
+Rule doesn't have all its properties in alphabetical order.
+    main#home h1 {
+
+main.css
+69: warning at line 378, col 5
+Rule doesn't have all its properties in alphabetical order.
+    main .lg-heading {
+
+main.css
+70: warning at line 382, col 1
+Rule doesn't have all its properties in alphabetical order.
+.main-footer {
+
+main.css
+71: warning at line 387, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .main-footer .footer-top {
+
+main.css
+72: error at line 389, col 38
+Expected RBRACE at line 389, col 38.
+    grid-template-columns: repeat(2, 1fr);
+
+main.css
+73: warning at line 390, col 5
+Unknown property 'justify-items'.
+    justify-items: center;
+
+main.css
+74: warning at line 396, col 43
+The universal selector (*) is known to be slow.
+      .main-footer .footer-top .sitemap > * {
+
+main.css
+75: warning at line 398, col 9
+Rule doesn't have all its properties in alphabetical order.
+        .main-footer .footer-top .sitemap > * a {
+
+main.css
+76: warning at line 407, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .main-footer .footer-top .social-icons {
+
+main.css
+77: warning at line 413, col 7
+Rule doesn't have all its properties in alphabetical order.
+      .main-footer .footer-top .social-icons .nav-item {
+
+main.css
+78: warning at line 414, col 9
+Using height with padding can sometimes make elements larger than you expect.
+        padding: 7px;
+
+main.css
+79: warning at line 414, col 9
+Using width with padding can sometimes make elements larger than you expect.
+        padding: 7px;
+
+main.css
+80: warning at line 415, col 9
+Fallback background-color (hex or RGB) should precede RGBA background-color.
+        background-color: rgba(255, 255, 255, 0.15);
+
+main.css
+81: warning at line 424, col 48
+Adjoining classes: .main-footer   .footer-top   .social-icons   .nav-item.twitter:hover
+        .main-footer .footer-top .social-icons .nav-item.twitter:hover {
+
+main.css
+82: warning at line 424, col 48
+Adjoining classes: .main-footer   .footer-top   .social-icons   .nav-item.twitter:hover
+        .main-footer .footer-top .social-icons .nav-item.twitter:hover {
+
+main.css
+83: warning at line 428, col 48
+Adjoining classes: .main-footer   .footer-top   .social-icons   .nav-item.facebook:hover
+        .main-footer .footer-top .social-icons .nav-item.facebook:hover {
+
+main.css
+84: warning at line 428, col 48
+Adjoining classes: .main-footer   .footer-top   .social-icons   .nav-item.facebook:hover
+        .main-footer .footer-top .social-icons .nav-item.facebook:hover {
+
+main.css
+85: warning at line 432, col 48
+Adjoining classes: .main-footer   .footer-top   .social-icons   .nav-item.github:hover
+        .main-footer .footer-top .social-icons .nav-item.github:hover {
+
+main.css
+86: warning at line 432, col 48
+Adjoining classes: .main-footer   .footer-top   .social-icons   .nav-item.github:hover
+        .main-footer .footer-top .social-icons .nav-item.github:hover {
+
+main.css
+87: warning at line 436, col 48
+Adjoining classes: .main-footer   .footer-top   .social-icons   .nav-item.linkedin:hover
+        .main-footer .footer-top .social-icons .nav-item.linkedin:hover {
+
+main.css
+88: warning at line 436, col 48
+Adjoining classes: .main-footer   .footer-top   .social-icons   .nav-item.linkedin:hover
+        .main-footer .footer-top .social-icons .nav-item.linkedin:hover {
+
+main.css
+89: warning at line 442, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .main-footer .footer-bottom {
+
+main.css
+90: error at line 447, col 38
+Expected RBRACE at line 447, col 38.
+    grid-template-columns: repeat(1, 1fr); }
+
+main.css
+91: warning at line 451, col 7
+Rule doesn't have all its properties in alphabetical order.
+      .main-footer .footer-bottom .author:hover {
+
+main.css
+92: error at line 458, col 38
+Expected RBRACE at line 458, col 38.
+    grid-template-columns: repeat(1, 1fr); } }
+
+main.css
+93: warning at line 460, col 1
+Rule doesn't have all its properties in alphabetical order.
+.about-container {
+
+main.css
+94: error at line 462, col 26
+Unexpected token '1fr' at line 462, col 26.
+  grid-template-columns: 1fr 3fr;
+
+main.css
+95: warning at line 463, col 34
+Values of 0 shouldn't have units specified.
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px; }
+
+main.css
+96: warning at line 463, col 46
+Values of 0 shouldn't have units specified.
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px; }
+
+main.css
+97: warning at line 466, col 3
+Rule is empty.
+  .about-container {
+
+main.css
+98: error at line 467, col 28
+Unexpected token '1fr' at line 467, col 28.
+    grid-template-columns: 1fr; } }
+
+main.css
+99: warning at line 470, col 3
+Rule is empty.
+  .about-container {
+
+main.css
+100: error at line 471, col 28
+Unexpected token '1fr' at line 471, col 28.
+    grid-template-columns: 1fr 2fr; } }
+
+main.css
+101: warning at line 473, col 1
+Rule doesn't have all its properties in alphabetical order.
+.bio {
+
+main.css
+102: warning at line 477, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .bio-content {
+
+main.css
+103: warning at line 481, col 18
+Heading (h3) should not be qualified.
+    .bio-content h3, .bio-content p {
+
+main.css
+104: warning at line 481, col 18
+Heading (h3) has already been defined.
+    .bio-content h3, .bio-content p {
+
+main.css
+105: warning at line 483, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .bio-content .mission {
+
+main.css
+106: warning at line 487, col 18
+Heading (h2) should not be qualified.
+  .bio-education h2 {
+
+main.css
+107: warning at line 487, col 18
+Heading (h2) has already been defined.
+  .bio-education h2 {
+
+main.css
+108: warning at line 496, col 3
+Don't use IDs in selectors.
+  main#about {
+
+main.css
+109: warning at line 496, col 3
+Element (main#about) is overqualified, just use #about without element name.
+  main#about {
+
+main.css
+110: warning at line 498, col 3
+Rule is empty.
+  .about-container {
+
+main.css
+111: error at line 499, col 28
+Unexpected token '1fr' at line 499, col 28.
+    grid-template-columns: 1fr; }
+
+main.css
+112: error at line 506, col 36
+Expected RBRACE at line 506, col 36.
+  grid-template-columns: repeat(1, 1fr); }
+
+main.css
+113: error at line 510, col 38
+Expected RBRACE at line 510, col 38.
+    grid-template-columns: repeat(2, 1fr); } }
+
+main.css
+114: error at line 514, col 38
+Expected RBRACE at line 514, col 38.
+    grid-template-columns: repeat(3, 1fr); } }
+
+main.css
+115: warning at line 516, col 1
+Don't use IDs in selectors.
+main#contact {
+
+main.css
+116: warning at line 516, col 1
+Element (main#contact) is overqualified, just use #contact without element name.
+main#contact {
+
+main.css
+117: warning at line 518, col 3
+Don't use IDs in selectors.
+  main#contact section {
+
+main.css
+118: warning at line 518, col 3
+Element (main#contact) is overqualified, just use #contact without element name.
+  main#contact section {
+
+main.css
+119: warning at line 523, col 3
+Don't use IDs in selectors.
+  main#work {
+
+main.css
+120: warning at line 523, col 3
+Element (main#work) is overqualified, just use #work without element name.
+  main#work {
+
+main.css
+121: warning at line 526, col 1
+Rule doesn't have all its properties in alphabetical order.
+.boxes {
+
+main.css
+122: warning at line 529, col 3
+Expected (flex-start | flex-end | center | space-between | space-around) but found 'space-evenly'.
+  justify-content: space-evenly;
+
+main.css
+123: warning at line 532, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .boxes div {
+
+main.css
+124: warning at line 543, col 3
+Adjoining classes: .boxes.sm
+  .boxes.sm {
+
+main.css
+125: warning at line 545, col 5
+Adjoining classes: .boxes.sm   div
+    .boxes.sm div {
+
+main.css
+126: warning at line 545, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .boxes.sm div {
+
+main.css
+127: warning at line 554, col 7
+Adjoining classes: .boxes.sm   div:hover
+      .boxes.sm div:hover {
+
+main.css
+128: warning at line 557, col 9
+Adjoining classes: .boxes.sm   div:hover   span
+        .boxes.sm div:hover span {
+
+main.css
+129: warning at line 560, col 2
+Rule doesn't have all its properties in alphabetical order.
+ .btn-outline, .btn-certificate {
+
+main.css
+130: warning at line 585, col 1
+Rule doesn't have all its properties in alphabetical order.
+.course {
+
+main.css
+131: warning at line 598, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .course-logo {
+
+main.css
+132: warning at line 601, col 5
+Using height with border can sometimes make elements larger than you expect.
+    border: 1px solid #eee;
+
+main.css
+133: warning at line 601, col 5
+Using width with border can sometimes make elements larger than you expect.
+    border: 1px solid #eee;
+
+main.css
+134: warning at line 607, col 11
+Heading (h3) should not be qualified.
+  .course h3 {
+
+main.css
+135: warning at line 607, col 11
+Heading (h3) has already been defined.
+  .course h3 {
+
+main.css
+136: warning at line 607, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .course h3 {
+
+main.css
+137: warning at line 611, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .course .info {
+
+main.css
+138: warning at line 616, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .course .grade {
+
+main.css
+139: warning at line 620, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .course .btn-certificate {
+
+main.css
+140: warning at line 629, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .course {
+
+main.css
+141: warning at line 639, col 1
+Rule doesn't have all its properties in alphabetical order.
+.profile-card {
+
+main.css
+142: warning at line 646, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .profile-card-image {
+
+main.css
+143: warning at line 653, col 5
+Using height with border can sometimes make elements larger than you expect.
+    border: #94c85a 3px solid;
+
+main.css
+144: warning at line 655, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .profile-card-body {
+
+main.css
+145: warning at line 661, col 5
+Duplicate property 'padding' found.
+    padding: 1.25rem 1rem 0.5rem 1rem; }
+
+main.css
+146: warning at line 662, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .profile-card-body-item {
+
+main.css
+147: warning at line 668, col 31
+Heading (h4) should not be qualified.
+      .profile-card-body-item h4,
+
+main.css
+148: warning at line 678, col 26
+Heading (h2) should not be qualified.
+    .profile-card-footer h2 {
+
+main.css
+149: warning at line 678, col 26
+Heading (h2) has already been defined.
+    .profile-card-footer h2 {
+
+main.css
+150: warning at line 678, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .profile-card-footer h2 {
+
+main.css
+151: warning at line 684, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .profile-card-image {
+
+main.css
+152: error at line 700, col 36
+Expected RBRACE at line 700, col 36.
+  grid-template-columns: repeat(1, 1fr); }
+
+main.css
+153: error at line 704, col 38
+Expected RBRACE at line 704, col 38.
+    grid-template-columns: repeat(2, 1fr); } }
+
+main.css
+154: warning at line 713, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .skill-card header {
+
+main.css
+155: warning at line 723, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .skill-card-logos img {
+
+main.css
+156: warning at line 728, col 1
+Rule doesn't have all its properties in alphabetical order.
+.section-header {
+
+main.css
+157: warning at line 739, col 3
+Unknown property 'grid-gap'.
+  grid-gap: 0.7rem;
+
+main.css
+158: error at line 740, col 36
+Expected RBRACE at line 740, col 36.
+  grid-template-columns: repeat(3, 1fr); }
+
+main.css
+159: warning at line 744, col 38
+Values of 0 shouldn't have units specified.
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px;
+
+main.css
+160: warning at line 744, col 50
+Values of 0 shouldn't have units specified.
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px;
+
+main.css
+161: warning at line 749, col 5
+Using height with padding-top can sometimes make elements larger than you expect.
+    padding-top: 24px; }
+
+main.css
+162: warning at line 759, col 1
+Rule doesn't have all its properties in alphabetical order.
+.overlay {
+
+main.css
+163: warning at line 769, col 3
+Duplicate property 'transition' found.
+  transition: 0.5s ease; }
+
+main.css
+164: warning at line 772, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .overlay .content p {
+
+main.css
+165: warning at line 775, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .overlay .arrow-btn {
+
+main.css
+166: warning at line 784, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .overlay .links {
+
+main.css
+167: warning at line 788, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .overlay .links i {
+
+main.css
+168: error at line 819, col 38
+Expected RBRACE at line 819, col 38.
+    grid-template-columns: repeat(3, 1fr); } }
+
+main.css
+169: error at line 823, col 38
+Expected RBRACE at line 823, col 38.
+    grid-template-columns: repeat(2, 1fr); } }
+
+main.css
+170: error at line 827, col 38
+Expected RBRACE at line 827, col 38.
+    grid-template-columns: repeat(1, 1fr); } }
+
+main.css
+171: warning at line 830, col 3
+Rule is empty.
+  .projects {
+
+main.css
+172: error at line 831, col 28
+Unexpected token '1fr' at line 831, col 28.
+    grid-template-columns: 1fr; }
+
+main.css
+173: error at line 837, col 26
+Unexpected token '1fr' at line 837, col 26.
+  grid-template-columns: 1fr 2fr;
+
+main.css
+174: warning at line 840, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .form-card .image-container {
+
+main.css
+175: warning at line 852, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .form-card .form-container {
+
+main.css
+176: warning at line 858, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .form-card .form-container .description {
+
+main.css
+177: warning at line 865, col 7
+Rule doesn't have all its properties in alphabetical order.
+      .form-card .form-container form input,
+
+main.css
+178: warning at line 892, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .contact .info {
+
+main.css
+179: warning at line 901, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .contact .info address {
+
+main.css
+180: warning at line 906, col 1
+Rule doesn't have all its properties in alphabetical order.
+.asterik {
+
+main.css
+181: warning at line 914, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .labels label {
+
+main.css
+182: warning at line 920, col 1
+Rule doesn't have all its properties in alphabetical order.
+.btn-submit {
+
+main.css
+183: warning at line 926, col 3
+Using width with padding can sometimes make elements larger than you expect.
+  padding: 1.025rem 15px;
+
+main.css
+184: warning at line 934, col 3
+Rule is empty.
+  .form-card {
+
+main.css
+185: error at line 935, col 28
+Unexpected token '1fr' at line 935, col 28.
+    grid-template-columns: 1fr; }
+
+main.css
+186: warning at line 936, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .form-card .image-container {
+
+main.css
+187: warning at line 939, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .form-card .form-container {
+
+main.css
+188: warning at line 946, col 1
+Rule doesn't have all its properties in alphabetical order.
+.tab {
+
+main.css
+189: warning at line 951, col 3
+Fallback background-color (hex or RGB) should precede RGBA background-color.
+  background-color: rgba(0, 0, 0, 0.8);
+
+main.css
+190: warning at line 955, col 1
+Rule doesn't have all its properties in alphabetical order.
+.tab p {
+
+main.css
+191: warning at line 957, col 3
+Using width with padding can sometimes make elements larger than you expect.
+  padding: 0.5rem 0.75rem;
+
+main.css
+192: warning at line 967, col 12
+Values of 0 shouldn't have units specified.
+  padding: 0px 12px; }
+
+main.css
+193: warning at line 970, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .tab {
+
+main.css
+194: warning at line 1006, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(1):hover ~ .option-bg {
+
+main.css
+195: warning at line 1007, col 8
+Values of 0 shouldn't have units specified.
+  top: 0px;
+
+main.css
+196: warning at line 1011, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(2):hover ~ .option-bg {
+
+main.css
+197: warning at line 1016, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(3):hover ~ .option-bg {
+
+main.css
+198: warning at line 1021, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(4):hover ~ .option-bg {
+
+main.css
+199: warning at line 1026, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(5):hover ~ .option-bg {
+
+main.css
+200: warning at line 1031, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(6):hover ~ .option-bg {
+
+main.css
+201: warning at line 1036, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(7):hover ~ .option-bg {
+
+main.css
+202: warning at line 1041, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(8):hover ~ .option-bg {
+
+main.css
+203: warning at line 1046, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(9):hover ~ .option-bg {
+
+main.css
+204: warning at line 1051, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(10):hover ~ .option-bg {
+
+main.css
+205: warning at line 1056, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(11):hover ~ .option-bg {
+
+main.css
+206: warning at line 1061, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(12):hover ~ .option-bg {
+
+main.css
+207: warning at line 1066, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(13):hover ~ .option-bg {
+
+main.css
+208: warning at line 1071, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(1) input[type="radio"]:checked ~ .label:before {
+
+main.css
+209: warning at line 1079, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(2) input[type="radio"]:checked ~ .label:before {
+
+main.css
+210: warning at line 1087, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(3) input[type="radio"]:checked ~ .label:before {
+
+main.css
+211: warning at line 1095, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(4) input[type="radio"]:checked ~ .label:before {
+
+main.css
+212: warning at line 1103, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(5) input[type="radio"]:checked ~ .label:before {
+
+main.css
+213: warning at line 1111, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(6) input[type="radio"]:checked ~ .label:before {
+
+main.css
+214: warning at line 1119, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(7) input[type="radio"]:checked ~ .label:before {
+
+main.css
+215: warning at line 1127, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(8) input[type="radio"]:checked ~ .label:before {
+
+main.css
+216: warning at line 1135, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(9) input[type="radio"]:checked ~ .label:before {
+
+main.css
+217: warning at line 1143, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(10) input[type="radio"]:checked ~ .label:before {
+
+main.css
+218: warning at line 1151, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(11) input[type="radio"]:checked ~ .label:before {
+
+main.css
+219: warning at line 1159, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(12) input[type="radio"]:checked ~ .label:before {
+
+main.css
+220: warning at line 1167, col 1
+Rule doesn't have all its properties in alphabetical order.
+.option:nth-child(13) input[type="radio"]:checked ~ .label:before {
+
+main.css
+221: warning at line 1175, col 1
+Rule doesn't have all its properties in alphabetical order.
+.select-box {
+
+main.css
+222: warning at line 1184, col 3
+Adjoining classes: .select-box.top
+  .select-box.top {
+
+main.css
+223: warning at line 1186, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .select-box .options-view-button {
+
+main.css
+224: warning at line 1201, col 5
+2 IDs in the selector, really?
+    .select-box .options-view-button:checked + #select-button #chevrons i {
+
+main.css
+225: warning at line 1211, col 5
+2 IDs in the selector, really?
+    .select-box .options-view-button:checked + #select-button #chevrons i {
+
+main.css
+226: warning at line 1215, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .select-box .select-button {
+
+main.css
+227: warning at line 1223, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .select-box .select-button .chevrons {
+
+main.css
+228: warning at line 1229, col 7
+Using width with padding can sometimes make elements larger than you expect.
+      padding: 9px 14px; }
+
+main.css
+229: warning at line 1230, col 7
+Rule doesn't have all its properties in alphabetical order.
+      .select-box .select-button .chevrons i {
+
+main.css
+230: warning at line 1236, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .select-box .options {
+
+main.css
+231: warning at line 1246, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .select-box .options .option {
+
+main.css
+232: warning at line 1253, col 7
+Rule doesn't have all its properties in alphabetical order.
+      .select-box .options .option i {
+
+main.css
+233: warning at line 1261, col 7
+Rule doesn't have all its properties in alphabetical order.
+      .select-box .options .option input[type="radio"]:checked ~ i {
+
+main.css
+234: warning at line 1269, col 7
+Rule doesn't have all its properties in alphabetical order.
+      .select-box .options .option input[type="radio"]:checked ~ .label:before {
+
+main.css
+235: warning at line 1277, col 7
+Rule doesn't have all its properties in alphabetical order.
+      .select-box .options .option .label {
+
+main.css
+236: warning at line 1282, col 7
+Rule doesn't have all its properties in alphabetical order.
+      .select-box .options .option .opt-val {
+
+main.css
+237: warning at line 1293, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .select-box .option-bg {
+
+main.css
+238: warning at line 1302, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .select-box input[type="radio"] {
+
+main.css
+239: warning at line 1312, col 1
+Rule doesn't have all its properties in alphabetical order.
+.s-c {
+
+main.css
+240: warning at line 1317, col 3
+Adjoining classes: .s-c.top
+  .s-c.top {
+
+main.css
+241: warning at line 1319, col 5
+Adjoining classes: .s-c.top:hover ~ i
+    .s-c.top:hover ~ i {
+
+main.css
+242: warning at line 1319, col 5
+Adjoining classes: .s-c.top:hover ~ i
+    .s-c.top:hover ~ i {
+
+main.css
+243: warning at line 1319, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .s-c.top:hover ~ i {
+
+main.css
+244: warning at line 1322, col 3
+Adjoining classes: .s-c.bottom
+  .s-c.bottom {
+
+main.css
+245: warning at line 1324, col 5
+Adjoining classes: .s-c.bottom:hover + i
+    .s-c.bottom:hover + i {
+
+main.css
+246: warning at line 1324, col 5
+Adjoining classes: .s-c.bottom:hover + i
+    .s-c.bottom:hover + i {
+
+main.css
+247: warning at line 1324, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .s-c.bottom:hover + i {
+
+main.css
+248: warning at line 1343, col 3
+Rule doesn't have all its properties in alphabetical order.
+  0% {
+
+main.css
+249: warning at line 1346, col 3
+Rule doesn't have all its properties in alphabetical order.
+  100% {
+
+main.css
+250: warning at line 1350, col 1
+Rule doesn't have all its properties in alphabetical order.
+.bar {
+
+main.css
+251: warning at line 1359, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .bar .fa-firefox {
+
+main.css
+252: warning at line 1368, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .bar .window-buttons {
+
+main.css
+253: warning at line 1377, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .bar .window-buttons:before {
+
+main.css
+254: warning at line 1387, col 5
+Rule doesn't have all its properties in alphabetical order.
+    .bar .window-buttons:after {
+
+main.css
+255: warning at line 1397, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .bar .title {
+
+main.css
+256: warning at line 1401, col 5
+Using width with padding can sometimes make elements larger than you expect.
+    padding: 0.1rem 1rem;
+
+main.css
+257: warning at line 1406, col 1
+Rule doesn't have all its properties in alphabetical order.
+.btn-group {
+
+main.css
+258: warning at line 1411, col 1
+Rule doesn't have all its properties in alphabetical order.
+.github-stats {
+
+main.css
+259: warning at line 1414, col 17
+Heading (h2) should not be qualified.
+  .github-stats h2 {
+
+main.css
+260: warning at line 1414, col 17
+Heading (h2) has already been defined.
+  .github-stats h2 {
+
+main.css
+261: warning
+Too many font-size declarations (35), abstraction needed.
+
+main.css
+262: warning
+You have 5 h1s, 6 h2s, 5 h3s defined in this stylesheet.

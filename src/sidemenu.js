@@ -1,12 +1,3 @@
-function footer() {
-  if(document.getElementById("year")){
-    var year = new Date().getFullYear();
-    var txt = document.getElementById("year");
-    txt.innerHTML = year + ". ";
-  }
-}
-
-footer();
 
 // Select DOM Items
 const menuBtn = document.querySelector(".menu-btn");
@@ -43,25 +34,3 @@ function toggleMenu() {
 }
 
 
-
-function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-
-
-if(document.getElementById("defaultOpen")){
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
-}

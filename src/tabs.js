@@ -12,5 +12,10 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 
+
+
+if(document.getElementById("defaultOpen")){
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+}

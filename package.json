@@ -9,6 +9,7 @@
     "imageOpt": "node ./optimiseImage.js",
     "deploy": "gh-pages -d dist",
     "concat:js": "concat-cli -f src/*.js -o js/bundle.js",
+    "minimise:js": "minify js/bundle.js > js/bundle.min.js",
     "watch:js": "onchange 'src/*.js' -- npm run concat:js",
     "build-css": "node-sass --include-path scss scss/main.scss   dist/css/main.css",
     "clean-css": "purgecss --css dist/css/main.css --content ./*.html --output dist/css/",
